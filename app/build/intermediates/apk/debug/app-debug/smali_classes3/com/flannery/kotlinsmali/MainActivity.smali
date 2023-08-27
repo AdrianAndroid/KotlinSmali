@@ -33,7 +33,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 6
+    .line 7
     invoke-direct {p0}, Landroidx/appcompat/app/AppCompatActivity;-><init>()V
 
     return-void
@@ -44,14 +44,14 @@
 .method public final main()V
     .locals 2
 
-    .line 13
+    .line 14
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     const-string v1, "Hello World!"
 
     invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/Object;)V
 
-    .line 14
+    .line 15
     return-void
 .end method
 
@@ -59,14 +59,14 @@
     .locals 1
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
-    .line 8
+    .line 9
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 9
+    .line 10
     const v0, 0x7f0b001c
 
     invoke-virtual {p0, v0}, Lcom/flannery/kotlinsmali/MainActivity;->setContentView(I)V
 
-    .line 10
+    .line 11
     return-void
 .end method
