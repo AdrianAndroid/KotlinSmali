@@ -79,8 +79,9 @@ public final class OnBackPressedDispatcher {
         }
     }
 
+    /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: classes.dex */
-    private class LifecycleOnBackPressedCancellable implements LifecycleEventObserver, Cancellable {
+    public class LifecycleOnBackPressedCancellable implements LifecycleEventObserver, Cancellable {
         private Cancellable mCurrentCancellable;
         private final Lifecycle mLifecycle;
         private final OnBackPressedCallback mOnBackPressedCallback;
