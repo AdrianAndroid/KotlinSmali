@@ -18,9 +18,8 @@ public class CLNumber extends CLElement {
         return new CLNumber(content);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.constraintlayout.core.parser.CLElement
-    public String toJSON() {
+    protected String toJSON() {
         float value = getFloat();
         int intValue = (int) value;
         if (intValue == value) {
@@ -29,9 +28,8 @@ public class CLNumber extends CLElement {
         return "" + value;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.constraintlayout.core.parser.CLElement
-    public String toFormattedJSON(int indent, int forceIndent) {
+    protected String toFormattedJSON(int indent, int forceIndent) {
         StringBuilder json = new StringBuilder();
         addIndent(json, indent);
         float value = getFloat();
