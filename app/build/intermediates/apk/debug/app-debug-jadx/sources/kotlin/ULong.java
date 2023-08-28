@@ -16,22 +16,22 @@ public final class ULong implements Comparable<ULong> {
     private final long data;
 
     /* renamed from: box-impl */
-    public static final /* synthetic */ ULong m210boximpl(long j) {
+    public static final /* synthetic */ ULong m212boximpl(long j) {
         return new ULong(j);
     }
 
     /* renamed from: constructor-impl */
-    public static long m216constructorimpl(long j) {
+    public static long m218constructorimpl(long j) {
         return j;
     }
 
     /* renamed from: equals-impl */
-    public static boolean m222equalsimpl(long j, Object obj) {
-        return (obj instanceof ULong) && j == ((ULong) obj).m267unboximpl();
+    public static boolean m224equalsimpl(long j, Object obj) {
+        return (obj instanceof ULong) && j == ((ULong) obj).m269unboximpl();
     }
 
     /* renamed from: equals-impl0 */
-    public static final boolean m223equalsimpl0(long j, long j2) {
+    public static final boolean m225equalsimpl0(long j, long j2) {
         return j == j2;
     }
 
@@ -39,26 +39,26 @@ public final class ULong implements Comparable<ULong> {
     }
 
     /* renamed from: hashCode-impl */
-    public static int m228hashCodeimpl(long j) {
+    public static int m230hashCodeimpl(long j) {
         return (int) ((j >>> 32) ^ j);
     }
 
     public boolean equals(Object obj) {
-        return m222equalsimpl(this.data, obj);
+        return m224equalsimpl(this.data, obj);
     }
 
     public int hashCode() {
-        return m228hashCodeimpl(this.data);
+        return m230hashCodeimpl(this.data);
     }
 
     /* renamed from: unbox-impl */
-    public final /* synthetic */ long m267unboximpl() {
+    public final /* synthetic */ long m269unboximpl() {
         return this.data;
     }
 
     @Override // java.lang.Comparable
     public /* bridge */ /* synthetic */ int compareTo(ULong uLong) {
-        return UnsignedKt.ulongCompare(m267unboximpl(), uLong.m267unboximpl());
+        return UnsignedKt.ulongCompare(m269unboximpl(), uLong.m269unboximpl());
     }
 
     private /* synthetic */ ULong(long data) {
@@ -78,271 +78,271 @@ public final class ULong implements Comparable<ULong> {
     }
 
     /* renamed from: compareTo-7apg3OU */
-    private static final int m211compareTo7apg3OU(long arg0, byte other) {
-        return UnsignedKt.ulongCompare(arg0, m216constructorimpl(other & 255));
+    private static final int m213compareTo7apg3OU(long arg0, byte other) {
+        return UnsignedKt.ulongCompare(arg0, m218constructorimpl(other & 255));
     }
 
     /* renamed from: compareTo-xj2QHRw */
-    private static final int m215compareToxj2QHRw(long arg0, short other) {
-        return UnsignedKt.ulongCompare(arg0, m216constructorimpl(other & 65535));
+    private static final int m217compareToxj2QHRw(long arg0, short other) {
+        return UnsignedKt.ulongCompare(arg0, m218constructorimpl(other & 65535));
     }
 
     /* renamed from: compareTo-WZ4Q5Ns */
-    private static final int m214compareToWZ4Q5Ns(long arg0, int other) {
-        return UnsignedKt.ulongCompare(arg0, m216constructorimpl(other & 4294967295L));
+    private static final int m216compareToWZ4Q5Ns(long arg0, int other) {
+        return UnsignedKt.ulongCompare(arg0, m218constructorimpl(other & 4294967295L));
     }
 
     /* renamed from: compareTo-VKZWuLQ */
-    private int m212compareToVKZWuLQ(long other) {
-        return UnsignedKt.ulongCompare(m267unboximpl(), other);
+    private int m214compareToVKZWuLQ(long other) {
+        return UnsignedKt.ulongCompare(m269unboximpl(), other);
     }
 
     /* renamed from: compareTo-VKZWuLQ */
-    private static int m213compareToVKZWuLQ(long arg0, long other) {
+    private static int m215compareToVKZWuLQ(long arg0, long other) {
         return UnsignedKt.ulongCompare(arg0, other);
     }
 
     /* renamed from: plus-7apg3OU */
-    private static final long m240plus7apg3OU(long arg0, byte other) {
-        return m216constructorimpl(m216constructorimpl(other & 255) + arg0);
+    private static final long m242plus7apg3OU(long arg0, byte other) {
+        return m218constructorimpl(m218constructorimpl(other & 255) + arg0);
     }
 
     /* renamed from: plus-xj2QHRw */
-    private static final long m243plusxj2QHRw(long arg0, short other) {
-        return m216constructorimpl(m216constructorimpl(other & 65535) + arg0);
+    private static final long m245plusxj2QHRw(long arg0, short other) {
+        return m218constructorimpl(m218constructorimpl(other & 65535) + arg0);
     }
 
     /* renamed from: plus-WZ4Q5Ns */
-    private static final long m242plusWZ4Q5Ns(long arg0, int other) {
-        return m216constructorimpl(m216constructorimpl(other & 4294967295L) + arg0);
+    private static final long m244plusWZ4Q5Ns(long arg0, int other) {
+        return m218constructorimpl(m218constructorimpl(other & 4294967295L) + arg0);
     }
 
     /* renamed from: plus-VKZWuLQ */
-    private static final long m241plusVKZWuLQ(long arg0, long other) {
-        return m216constructorimpl(arg0 + other);
+    private static final long m243plusVKZWuLQ(long arg0, long other) {
+        return m218constructorimpl(arg0 + other);
     }
 
     /* renamed from: minus-7apg3OU */
-    private static final long m231minus7apg3OU(long arg0, byte other) {
-        return m216constructorimpl(arg0 - m216constructorimpl(other & 255));
+    private static final long m233minus7apg3OU(long arg0, byte other) {
+        return m218constructorimpl(arg0 - m218constructorimpl(other & 255));
     }
 
     /* renamed from: minus-xj2QHRw */
-    private static final long m234minusxj2QHRw(long arg0, short other) {
-        return m216constructorimpl(arg0 - m216constructorimpl(other & 65535));
+    private static final long m236minusxj2QHRw(long arg0, short other) {
+        return m218constructorimpl(arg0 - m218constructorimpl(other & 65535));
     }
 
     /* renamed from: minus-WZ4Q5Ns */
-    private static final long m233minusWZ4Q5Ns(long arg0, int other) {
-        return m216constructorimpl(arg0 - m216constructorimpl(other & 4294967295L));
+    private static final long m235minusWZ4Q5Ns(long arg0, int other) {
+        return m218constructorimpl(arg0 - m218constructorimpl(other & 4294967295L));
     }
 
     /* renamed from: minus-VKZWuLQ */
-    private static final long m232minusVKZWuLQ(long arg0, long other) {
-        return m216constructorimpl(arg0 - other);
+    private static final long m234minusVKZWuLQ(long arg0, long other) {
+        return m218constructorimpl(arg0 - other);
     }
 
     /* renamed from: times-7apg3OU */
-    private static final long m251times7apg3OU(long arg0, byte other) {
-        return m216constructorimpl(m216constructorimpl(other & 255) * arg0);
+    private static final long m253times7apg3OU(long arg0, byte other) {
+        return m218constructorimpl(m218constructorimpl(other & 255) * arg0);
     }
 
     /* renamed from: times-xj2QHRw */
-    private static final long m254timesxj2QHRw(long arg0, short other) {
-        return m216constructorimpl(m216constructorimpl(other & 65535) * arg0);
+    private static final long m256timesxj2QHRw(long arg0, short other) {
+        return m218constructorimpl(m218constructorimpl(other & 65535) * arg0);
     }
 
     /* renamed from: times-WZ4Q5Ns */
-    private static final long m253timesWZ4Q5Ns(long arg0, int other) {
-        return m216constructorimpl(m216constructorimpl(other & 4294967295L) * arg0);
+    private static final long m255timesWZ4Q5Ns(long arg0, int other) {
+        return m218constructorimpl(m218constructorimpl(other & 4294967295L) * arg0);
     }
 
     /* renamed from: times-VKZWuLQ */
-    private static final long m252timesVKZWuLQ(long arg0, long other) {
-        return m216constructorimpl(arg0 * other);
+    private static final long m254timesVKZWuLQ(long arg0, long other) {
+        return m218constructorimpl(arg0 * other);
     }
 
     /* renamed from: div-7apg3OU */
-    private static final long m218div7apg3OU(long arg0, byte other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, m216constructorimpl(other & 255));
+    private static final long m220div7apg3OU(long arg0, byte other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, m218constructorimpl(other & 255));
     }
 
     /* renamed from: div-xj2QHRw */
-    private static final long m221divxj2QHRw(long arg0, short other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, m216constructorimpl(other & 65535));
+    private static final long m223divxj2QHRw(long arg0, short other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, m218constructorimpl(other & 65535));
     }
 
     /* renamed from: div-WZ4Q5Ns */
-    private static final long m220divWZ4Q5Ns(long arg0, int other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, m216constructorimpl(other & 4294967295L));
+    private static final long m222divWZ4Q5Ns(long arg0, int other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, m218constructorimpl(other & 4294967295L));
     }
 
     /* renamed from: div-VKZWuLQ */
-    private static final long m219divVKZWuLQ(long arg0, long other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, other);
+    private static final long m221divVKZWuLQ(long arg0, long other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, other);
     }
 
     /* renamed from: rem-7apg3OU */
-    private static final long m245rem7apg3OU(long arg0, byte other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(arg0, m216constructorimpl(other & 255));
+    private static final long m247rem7apg3OU(long arg0, byte other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(arg0, m218constructorimpl(other & 255));
     }
 
     /* renamed from: rem-xj2QHRw */
-    private static final long m248remxj2QHRw(long arg0, short other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(arg0, m216constructorimpl(other & 65535));
+    private static final long m250remxj2QHRw(long arg0, short other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(arg0, m218constructorimpl(other & 65535));
     }
 
     /* renamed from: rem-WZ4Q5Ns */
-    private static final long m247remWZ4Q5Ns(long arg0, int other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(arg0, m216constructorimpl(other & 4294967295L));
+    private static final long m249remWZ4Q5Ns(long arg0, int other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(arg0, m218constructorimpl(other & 4294967295L));
     }
 
     /* renamed from: rem-VKZWuLQ */
-    private static final long m246remVKZWuLQ(long arg0, long other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(arg0, other);
+    private static final long m248remVKZWuLQ(long arg0, long other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(arg0, other);
     }
 
     /* renamed from: floorDiv-7apg3OU */
-    private static final long m224floorDiv7apg3OU(long arg0, byte other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, m216constructorimpl(other & 255));
+    private static final long m226floorDiv7apg3OU(long arg0, byte other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, m218constructorimpl(other & 255));
     }
 
     /* renamed from: floorDiv-xj2QHRw */
-    private static final long m227floorDivxj2QHRw(long arg0, short other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, m216constructorimpl(other & 65535));
+    private static final long m229floorDivxj2QHRw(long arg0, short other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, m218constructorimpl(other & 65535));
     }
 
     /* renamed from: floorDiv-WZ4Q5Ns */
-    private static final long m226floorDivWZ4Q5Ns(long arg0, int other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, m216constructorimpl(other & 4294967295L));
+    private static final long m228floorDivWZ4Q5Ns(long arg0, int other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, m218constructorimpl(other & 4294967295L));
     }
 
     /* renamed from: floorDiv-VKZWuLQ */
-    private static final long m225floorDivVKZWuLQ(long arg0, long other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(arg0, other);
+    private static final long m227floorDivVKZWuLQ(long arg0, long other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(arg0, other);
     }
 
     /* renamed from: mod-7apg3OU */
-    private static final byte m235mod7apg3OU(long arg0, byte other) {
-        return UByte.m62constructorimpl((byte) UnsignedKt.m394ulongRemaindereb3DHEI(arg0, m216constructorimpl(other & 255)));
+    private static final byte m237mod7apg3OU(long arg0, byte other) {
+        return UByte.m64constructorimpl((byte) UnsignedKt.m396ulongRemaindereb3DHEI(arg0, m218constructorimpl(other & 255)));
     }
 
     /* renamed from: mod-xj2QHRw */
-    private static final short m238modxj2QHRw(long arg0, short other) {
-        return UShort.m322constructorimpl((short) UnsignedKt.m394ulongRemaindereb3DHEI(arg0, m216constructorimpl(other & 65535)));
+    private static final short m240modxj2QHRw(long arg0, short other) {
+        return UShort.m324constructorimpl((short) UnsignedKt.m396ulongRemaindereb3DHEI(arg0, m218constructorimpl(other & 65535)));
     }
 
     /* renamed from: mod-WZ4Q5Ns */
-    private static final int m237modWZ4Q5Ns(long arg0, int other) {
-        return UInt.m138constructorimpl((int) UnsignedKt.m394ulongRemaindereb3DHEI(arg0, m216constructorimpl(other & 4294967295L)));
+    private static final int m239modWZ4Q5Ns(long arg0, int other) {
+        return UInt.m140constructorimpl((int) UnsignedKt.m396ulongRemaindereb3DHEI(arg0, m218constructorimpl(other & 4294967295L)));
     }
 
     /* renamed from: mod-VKZWuLQ */
-    private static final long m236modVKZWuLQ(long arg0, long other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(arg0, other);
+    private static final long m238modVKZWuLQ(long arg0, long other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(arg0, other);
     }
 
     /* renamed from: inc-s-VKNKU */
-    private static final long m229incsVKNKU(long arg0) {
-        return m216constructorimpl(1 + arg0);
+    private static final long m231incsVKNKU(long arg0) {
+        return m218constructorimpl(1 + arg0);
     }
 
     /* renamed from: dec-s-VKNKU */
-    private static final long m217decsVKNKU(long arg0) {
-        return m216constructorimpl((-1) + arg0);
+    private static final long m219decsVKNKU(long arg0) {
+        return m218constructorimpl((-1) + arg0);
     }
 
     /* renamed from: rangeTo-VKZWuLQ */
-    private static final ULongRange m244rangeToVKZWuLQ(long arg0, long other) {
+    private static final ULongRange m246rangeToVKZWuLQ(long arg0, long other) {
         return new ULongRange(arg0, other, null);
     }
 
     /* renamed from: shl-s-VKNKU */
-    private static final long m249shlsVKNKU(long arg0, int bitCount) {
-        return m216constructorimpl(arg0 << bitCount);
+    private static final long m251shlsVKNKU(long arg0, int bitCount) {
+        return m218constructorimpl(arg0 << bitCount);
     }
 
     /* renamed from: shr-s-VKNKU */
-    private static final long m250shrsVKNKU(long arg0, int bitCount) {
-        return m216constructorimpl(arg0 >>> bitCount);
+    private static final long m252shrsVKNKU(long arg0, int bitCount) {
+        return m218constructorimpl(arg0 >>> bitCount);
     }
 
     /* renamed from: and-VKZWuLQ */
-    private static final long m209andVKZWuLQ(long arg0, long other) {
-        return m216constructorimpl(arg0 & other);
+    private static final long m211andVKZWuLQ(long arg0, long other) {
+        return m218constructorimpl(arg0 & other);
     }
 
     /* renamed from: or-VKZWuLQ */
-    private static final long m239orVKZWuLQ(long arg0, long other) {
-        return m216constructorimpl(arg0 | other);
+    private static final long m241orVKZWuLQ(long arg0, long other) {
+        return m218constructorimpl(arg0 | other);
     }
 
     /* renamed from: xor-VKZWuLQ */
-    private static final long m266xorVKZWuLQ(long arg0, long other) {
-        return m216constructorimpl(arg0 ^ other);
+    private static final long m268xorVKZWuLQ(long arg0, long other) {
+        return m218constructorimpl(arg0 ^ other);
     }
 
     /* renamed from: inv-s-VKNKU */
-    private static final long m230invsVKNKU(long arg0) {
-        return m216constructorimpl(~arg0);
+    private static final long m232invsVKNKU(long arg0) {
+        return m218constructorimpl(~arg0);
     }
 
     /* renamed from: toByte-impl */
-    private static final byte m255toByteimpl(long arg0) {
+    private static final byte m257toByteimpl(long arg0) {
         return (byte) arg0;
     }
 
     /* renamed from: toShort-impl */
-    private static final short m260toShortimpl(long arg0) {
+    private static final short m262toShortimpl(long arg0) {
         return (short) arg0;
     }
 
     /* renamed from: toInt-impl */
-    private static final int m258toIntimpl(long arg0) {
+    private static final int m260toIntimpl(long arg0) {
         return (int) arg0;
     }
 
     /* renamed from: toLong-impl */
-    private static final long m259toLongimpl(long arg0) {
+    private static final long m261toLongimpl(long arg0) {
         return arg0;
     }
 
     /* renamed from: toUByte-w2LRezQ */
-    private static final byte m262toUBytew2LRezQ(long arg0) {
-        return UByte.m62constructorimpl((byte) arg0);
+    private static final byte m264toUBytew2LRezQ(long arg0) {
+        return UByte.m64constructorimpl((byte) arg0);
     }
 
     /* renamed from: toUShort-Mh2AYeg */
-    private static final short m265toUShortMh2AYeg(long arg0) {
-        return UShort.m322constructorimpl((short) arg0);
+    private static final short m267toUShortMh2AYeg(long arg0) {
+        return UShort.m324constructorimpl((short) arg0);
     }
 
     /* renamed from: toUInt-pVg5ArA */
-    private static final int m263toUIntpVg5ArA(long arg0) {
-        return UInt.m138constructorimpl((int) arg0);
+    private static final int m265toUIntpVg5ArA(long arg0) {
+        return UInt.m140constructorimpl((int) arg0);
     }
 
     /* renamed from: toULong-s-VKNKU */
-    private static final long m264toULongsVKNKU(long arg0) {
+    private static final long m266toULongsVKNKU(long arg0) {
         return arg0;
     }
 
     /* renamed from: toFloat-impl */
-    private static final float m257toFloatimpl(long arg0) {
+    private static final float m259toFloatimpl(long arg0) {
         return (float) UnsignedKt.ulongToDouble(arg0);
     }
 
     /* renamed from: toDouble-impl */
-    private static final double m256toDoubleimpl(long arg0) {
+    private static final double m258toDoubleimpl(long arg0) {
         return UnsignedKt.ulongToDouble(arg0);
     }
 
     /* renamed from: toString-impl */
-    public static String m261toStringimpl(long arg0) {
+    public static String m263toStringimpl(long arg0) {
         return UnsignedKt.ulongToString(arg0);
     }
 
     public String toString() {
-        return m261toStringimpl(this.data);
+        return m263toStringimpl(this.data);
     }
 }

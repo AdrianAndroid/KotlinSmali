@@ -35,12 +35,12 @@ final class ReceiveChannel$onReceiveOrNull$1$registerSelectClause1$1<E, R> exten
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-        return m1556invokeWpGqRn0(((ChannelResult) obj).m1552unboximpl(), (Continuation) obj2);
+        return m1558invokeWpGqRn0(((ChannelResult) obj).m1554unboximpl(), (Continuation) obj2);
     }
 
     /* renamed from: invoke-WpGqRn0  reason: not valid java name */
-    public final Object m1556invokeWpGqRn0(Object obj, Continuation<? super R> continuation) {
-        return ((ReceiveChannel$onReceiveOrNull$1$registerSelectClause1$1) create(ChannelResult.m1540boximpl(obj), continuation)).invokeSuspend(Unit.INSTANCE);
+    public final Object m1558invokeWpGqRn0(Object obj, Continuation<? super R> continuation) {
+        return ((ReceiveChannel$onReceiveOrNull$1$registerSelectClause1$1) create(ChannelResult.m1542boximpl(obj), continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -50,14 +50,14 @@ final class ReceiveChannel$onReceiveOrNull$1$registerSelectClause1$1<E, R> exten
         switch (this.label) {
             case 0:
                 ResultKt.throwOnFailure($result);
-                Object it = ((ChannelResult) this.L$0).m1552unboximpl();
-                Throwable it2 = ChannelResult.m1544exceptionOrNullimpl(it);
+                Object it = ((ChannelResult) this.L$0).m1554unboximpl();
+                Throwable it2 = ChannelResult.m1546exceptionOrNullimpl(it);
                 if (it2 != null) {
                     throw it2;
                 }
-                Object m1545getOrNullimpl = ChannelResult.m1545getOrNullimpl(it);
+                Object m1547getOrNullimpl = ChannelResult.m1547getOrNullimpl(it);
                 this.label = 1;
-                Object it3 = this.$block.invoke(m1545getOrNullimpl, this);
+                Object it3 = this.$block.invoke(m1547getOrNullimpl, this);
                 return it3 == coroutine_suspended ? coroutine_suspended : it3;
             case 1:
                 ResultKt.throwOnFailure($result);

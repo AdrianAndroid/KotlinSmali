@@ -1346,7 +1346,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [kotlin.collections.IntIterator] */
     /* renamed from: maxOf  reason: collision with other method in class */
-    private static final float m1339maxOf(CharSequence $this$maxOf, Function1<? super Character, Float> selector) {
+    private static final float m1341maxOf(CharSequence $this$maxOf, Function1<? super Character, Float> selector) {
         Intrinsics.checkNotNullParameter($this$maxOf, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$maxOf.length() == 0) {
@@ -1364,7 +1364,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [kotlin.collections.IntIterator] */
     /* renamed from: maxOf  reason: collision with other method in class */
-    private static final <R extends Comparable<? super R>> R m1340maxOf(CharSequence $this$maxOf, Function1<? super Character, ? extends R> selector) {
+    private static final <R extends Comparable<? super R>> R m1342maxOf(CharSequence $this$maxOf, Function1<? super Character, ? extends R> selector) {
         Intrinsics.checkNotNullParameter($this$maxOf, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$maxOf.length() == 0) {
@@ -1384,7 +1384,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r0v10, types: [kotlin.collections.IntIterator] */
     /* renamed from: maxOfOrNull  reason: collision with other method in class */
-    private static final Double m1341maxOfOrNull(CharSequence $this$maxOfOrNull, Function1<? super Character, Double> selector) {
+    private static final Double m1343maxOfOrNull(CharSequence $this$maxOfOrNull, Function1<? super Character, Double> selector) {
         Intrinsics.checkNotNullParameter($this$maxOfOrNull, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$maxOfOrNull.length() == 0) {
@@ -1402,7 +1402,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [kotlin.collections.IntIterator] */
     /* renamed from: maxOfOrNull  reason: collision with other method in class */
-    private static final Float m1342maxOfOrNull(CharSequence $this$maxOfOrNull, Function1<? super Character, Float> selector) {
+    private static final Float m1344maxOfOrNull(CharSequence $this$maxOfOrNull, Function1<? super Character, Float> selector) {
         Intrinsics.checkNotNullParameter($this$maxOfOrNull, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$maxOfOrNull.length() == 0) {
@@ -1626,7 +1626,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [kotlin.collections.IntIterator] */
     /* renamed from: minOf  reason: collision with other method in class */
-    private static final float m1343minOf(CharSequence $this$minOf, Function1<? super Character, Float> selector) {
+    private static final float m1345minOf(CharSequence $this$minOf, Function1<? super Character, Float> selector) {
         Intrinsics.checkNotNullParameter($this$minOf, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$minOf.length() == 0) {
@@ -1644,7 +1644,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [kotlin.collections.IntIterator] */
     /* renamed from: minOf  reason: collision with other method in class */
-    private static final <R extends Comparable<? super R>> R m1344minOf(CharSequence $this$minOf, Function1<? super Character, ? extends R> selector) {
+    private static final <R extends Comparable<? super R>> R m1346minOf(CharSequence $this$minOf, Function1<? super Character, ? extends R> selector) {
         Intrinsics.checkNotNullParameter($this$minOf, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$minOf.length() == 0) {
@@ -1664,7 +1664,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r0v10, types: [kotlin.collections.IntIterator] */
     /* renamed from: minOfOrNull  reason: collision with other method in class */
-    private static final Double m1345minOfOrNull(CharSequence $this$minOfOrNull, Function1<? super Character, Double> selector) {
+    private static final Double m1347minOfOrNull(CharSequence $this$minOfOrNull, Function1<? super Character, Double> selector) {
         Intrinsics.checkNotNullParameter($this$minOfOrNull, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$minOfOrNull.length() == 0) {
@@ -1682,7 +1682,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [kotlin.collections.IntIterator] */
     /* renamed from: minOfOrNull  reason: collision with other method in class */
-    private static final Float m1346minOfOrNull(CharSequence $this$minOfOrNull, Function1<? super Character, Float> selector) {
+    private static final Float m1348minOfOrNull(CharSequence $this$minOfOrNull, Function1<? super Character, Float> selector) {
         Intrinsics.checkNotNullParameter($this$minOfOrNull, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
         if ($this$minOfOrNull.length() == 0) {
@@ -2142,10 +2142,10 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
     private static final int sumOfUInt(CharSequence $this$sumOf, Function1<? super Character, UInt> selector) {
         Intrinsics.checkNotNullParameter($this$sumOf, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
-        int sum = UInt.m138constructorimpl(0);
+        int sum = UInt.m140constructorimpl(0);
         for (int i = 0; i < $this$sumOf.length(); i++) {
             char element = $this$sumOf.charAt(i);
-            sum = UInt.m138constructorimpl(selector.invoke(Character.valueOf(element)).m189unboximpl() + sum);
+            sum = UInt.m140constructorimpl(selector.invoke(Character.valueOf(element)).m191unboximpl() + sum);
         }
         return sum;
     }
@@ -2153,10 +2153,10 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt {
     private static final long sumOfULong(CharSequence $this$sumOf, Function1<? super Character, ULong> selector) {
         Intrinsics.checkNotNullParameter($this$sumOf, "<this>");
         Intrinsics.checkNotNullParameter(selector, "selector");
-        long sum = ULong.m216constructorimpl(0L);
+        long sum = ULong.m218constructorimpl(0L);
         for (int i = 0; i < $this$sumOf.length(); i++) {
             char element = $this$sumOf.charAt(i);
-            sum = ULong.m216constructorimpl(selector.invoke(Character.valueOf(element)).m267unboximpl() + sum);
+            sum = ULong.m218constructorimpl(selector.invoke(Character.valueOf(element)).m269unboximpl() + sum);
         }
         return sum;
     }

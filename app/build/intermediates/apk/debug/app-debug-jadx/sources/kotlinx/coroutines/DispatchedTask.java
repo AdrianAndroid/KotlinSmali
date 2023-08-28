@@ -96,7 +96,7 @@ public abstract class DispatchedTask<T> extends Task {
                             try {
                                 if (continuation instanceof CoroutineStackFrame) {
                                     cancellationException = StackTraceRecoveryKt.recoverFromStackFrame(cause, (CoroutineStackFrame) continuation);
-                                    continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(cancellationException)));
+                                    continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(cancellationException)));
                                 }
                             } catch (Throwable th2) {
                                 th = th2;
@@ -107,14 +107,14 @@ public abstract class DispatchedTask<T> extends Task {
                             }
                         }
                         cancellationException = cause;
-                        continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(cancellationException)));
+                        continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(cancellationException)));
                     } else if (exception != null) {
                         Result.Companion companion2 = Result.Companion;
-                        continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(exception)));
+                        continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(exception)));
                     } else {
                         T successfulResult$kotlinx_coroutines_core = getSuccessfulResult$kotlinx_coroutines_core(state);
                         Result.Companion companion3 = Result.Companion;
-                        continuation.resumeWith(Result.m44constructorimpl(successfulResult$kotlinx_coroutines_core));
+                        continuation.resumeWith(Result.m46constructorimpl(successfulResult$kotlinx_coroutines_core));
                     }
                     Unit unit = Unit.INSTANCE;
                     if (undispatchedCompletion$iv == null || undispatchedCompletion$iv.clearThreadContext()) {
@@ -124,12 +124,12 @@ public abstract class DispatchedTask<T> extends Task {
                         Result.Companion companion4 = Result.Companion;
                         DispatchedTask<T> dispatchedTask = this;
                         taskContext.afterTask();
-                        result = Result.m44constructorimpl(Unit.INSTANCE);
+                        result = Result.m46constructorimpl(Unit.INSTANCE);
                     } catch (Throwable th3) {
                         th = th3;
                         Result.Companion companion5 = Result.Companion;
-                        result = Result.m44constructorimpl(ResultKt.createFailure(th));
-                        handleFatalException(fatalException, Result.m47exceptionOrNullimpl(result));
+                        result = Result.m46constructorimpl(ResultKt.createFailure(th));
+                        handleFatalException(fatalException, Result.m49exceptionOrNullimpl(result));
                     }
                 } catch (Throwable th4) {
                     th = th4;
@@ -143,15 +143,15 @@ public abstract class DispatchedTask<T> extends Task {
                 Result.Companion companion6 = Result.Companion;
                 DispatchedTask<T> dispatchedTask2 = this;
                 taskContext.afterTask();
-                result = Result.m44constructorimpl(Unit.INSTANCE);
+                result = Result.m46constructorimpl(Unit.INSTANCE);
             } catch (Throwable th6) {
                 th = th6;
                 Result.Companion companion52 = Result.Companion;
-                result = Result.m44constructorimpl(ResultKt.createFailure(th));
-                handleFatalException(fatalException, Result.m47exceptionOrNullimpl(result));
+                result = Result.m46constructorimpl(ResultKt.createFailure(th));
+                handleFatalException(fatalException, Result.m49exceptionOrNullimpl(result));
             }
         }
-        handleFatalException(fatalException, Result.m47exceptionOrNullimpl(result));
+        handleFatalException(fatalException, Result.m49exceptionOrNullimpl(result));
     }
 
     public final void handleFatalException(Throwable exception, Throwable finallyException) {

@@ -28,17 +28,17 @@ public class UIntProgression implements Iterable<UInt>, KMappedMarker {
             throw new IllegalArgumentException("Step must be greater than Int.MIN_VALUE to avoid overflow on negation.");
         }
         this.first = start;
-        this.last = UProgressionUtilKt.m1259getProgressionLastElementNkh28Cs(start, endInclusive, step);
+        this.last = UProgressionUtilKt.m1261getProgressionLastElementNkh28Cs(start, endInclusive, step);
         this.step = step;
     }
 
     /* renamed from: getFirst-pVg5ArA  reason: not valid java name */
-    public final int m1273getFirstpVg5ArA() {
+    public final int m1275getFirstpVg5ArA() {
         return this.first;
     }
 
     /* renamed from: getLast-pVg5ArA  reason: not valid java name */
-    public final int m1274getLastpVg5ArA() {
+    public final int m1276getLastpVg5ArA() {
         return this.last;
     }
 
@@ -77,10 +77,10 @@ public class UIntProgression implements Iterable<UInt>, KMappedMarker {
         StringBuilder append;
         int i;
         if (this.step > 0) {
-            append = new StringBuilder().append((Object) UInt.m183toStringimpl(this.first)).append("..").append((Object) UInt.m183toStringimpl(this.last)).append(" step ");
+            append = new StringBuilder().append((Object) UInt.m185toStringimpl(this.first)).append("..").append((Object) UInt.m185toStringimpl(this.last)).append(" step ");
             i = this.step;
         } else {
-            append = new StringBuilder().append((Object) UInt.m183toStringimpl(this.first)).append(" downTo ").append((Object) UInt.m183toStringimpl(this.last)).append(" step ");
+            append = new StringBuilder().append((Object) UInt.m185toStringimpl(this.first)).append(" downTo ").append((Object) UInt.m185toStringimpl(this.last)).append(" step ");
             i = -this.step;
         }
         return append.append(i).toString();
@@ -98,7 +98,7 @@ public class UIntProgression implements Iterable<UInt>, KMappedMarker {
         }
 
         /* renamed from: fromClosedRange-Nkh28Cs  reason: not valid java name */
-        public final UIntProgression m1275fromClosedRangeNkh28Cs(int rangeStart, int rangeEnd, int step) {
+        public final UIntProgression m1277fromClosedRangeNkh28Cs(int rangeStart, int rangeEnd, int step) {
             return new UIntProgression(rangeStart, rangeEnd, step, null);
         }
     }

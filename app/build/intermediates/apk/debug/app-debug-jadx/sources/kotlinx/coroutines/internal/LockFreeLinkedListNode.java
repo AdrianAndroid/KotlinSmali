@@ -192,7 +192,7 @@ public class LockFreeLinkedListNode {
     }
 
     /* renamed from: remove */
-    public boolean mo1580remove() {
+    public boolean mo1582remove() {
         return removeOrNext() == null;
     }
 
@@ -236,7 +236,7 @@ public class LockFreeLinkedListNode {
             if (first == this) {
                 return null;
             }
-            if (first.mo1580remove()) {
+            if (first.mo1582remove()) {
                 return first;
             }
             first.helpRemove();

@@ -297,12 +297,12 @@ public final class ConflatedBroadcastChannel<E> implements BroadcastChannel<E> {
 
     @Override // kotlinx.coroutines.channels.SendChannel
     /* renamed from: trySend-JP2dKIU */
-    public Object mo1535trySendJP2dKIU(E e) {
+    public Object mo1537trySendJP2dKIU(E e) {
         Closed it = offerInternal(e);
         if (it != null) {
-            return ChannelResult.Companion.m1553closedJP2dKIU(it.getSendException());
+            return ChannelResult.Companion.m1555closedJP2dKIU(it.getSendException());
         }
-        return ChannelResult.Companion.m1555successJP2dKIU(Unit.INSTANCE);
+        return ChannelResult.Companion.m1557successJP2dKIU(Unit.INSTANCE);
     }
 
     private final Closed offerInternal(E e) {

@@ -27,6 +27,6 @@ public final class ResumeOnCompletion extends JobNode {
     public void invoke2(Throwable cause) {
         Continuation<Unit> continuation = this.continuation;
         Result.Companion companion = Result.Companion;
-        continuation.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+        continuation.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
     }
 }

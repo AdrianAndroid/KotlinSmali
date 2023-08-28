@@ -42,7 +42,7 @@ public class SchedulerCoroutineDispatcher extends ExecutorCoroutineDispatcher {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     /* renamed from: dispatch */
-    public void mo1581dispatch(CoroutineContext context, Runnable block) {
+    public void mo1583dispatch(CoroutineContext context, Runnable block) {
         CoroutineScheduler.dispatch$default(this.coroutineScheduler, block, null, false, 6, null);
     }
 

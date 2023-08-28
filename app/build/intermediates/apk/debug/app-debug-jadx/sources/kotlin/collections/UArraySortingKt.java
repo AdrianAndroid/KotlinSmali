@@ -14,21 +14,21 @@ import kotlin.jvm.internal.Intrinsics;
 /* loaded from: classes.dex */
 public final class UArraySortingKt {
     /* renamed from: partition-4UcCI2c  reason: not valid java name */
-    private static final int m496partition4UcCI2c(byte[] array, int left, int right) {
+    private static final int m498partition4UcCI2c(byte[] array, int left, int right) {
         int i = left;
         int j = right;
-        byte pivot = UByteArray.m119getw2LRezQ(array, (left + right) / 2);
+        byte pivot = UByteArray.m121getw2LRezQ(array, (left + right) / 2);
         while (i <= j) {
-            while (Intrinsics.compare(UByteArray.m119getw2LRezQ(array, i) & UByte.MAX_VALUE, pivot & UByte.MAX_VALUE) < 0) {
+            while (Intrinsics.compare(UByteArray.m121getw2LRezQ(array, i) & UByte.MAX_VALUE, pivot & UByte.MAX_VALUE) < 0) {
                 i++;
             }
-            while (Intrinsics.compare(UByteArray.m119getw2LRezQ(array, j) & UByte.MAX_VALUE, pivot & UByte.MAX_VALUE) > 0) {
+            while (Intrinsics.compare(UByteArray.m121getw2LRezQ(array, j) & UByte.MAX_VALUE, pivot & UByte.MAX_VALUE) > 0) {
                 j--;
             }
             if (i <= j) {
-                byte tmp = UByteArray.m119getw2LRezQ(array, i);
-                UByteArray.m124setVurrAj0(array, i, UByteArray.m119getw2LRezQ(array, j));
-                UByteArray.m124setVurrAj0(array, j, tmp);
+                byte tmp = UByteArray.m121getw2LRezQ(array, i);
+                UByteArray.m126setVurrAj0(array, i, UByteArray.m121getw2LRezQ(array, j));
+                UByteArray.m126setVurrAj0(array, j, tmp);
                 i++;
                 j--;
             }
@@ -37,32 +37,32 @@ public final class UArraySortingKt {
     }
 
     /* renamed from: quickSort-4UcCI2c  reason: not valid java name */
-    private static final void m500quickSort4UcCI2c(byte[] array, int left, int right) {
-        int index = m496partition4UcCI2c(array, left, right);
+    private static final void m502quickSort4UcCI2c(byte[] array, int left, int right) {
+        int index = m498partition4UcCI2c(array, left, right);
         if (left < index - 1) {
-            m500quickSort4UcCI2c(array, left, index - 1);
+            m502quickSort4UcCI2c(array, left, index - 1);
         }
         if (index < right) {
-            m500quickSort4UcCI2c(array, index, right);
+            m502quickSort4UcCI2c(array, index, right);
         }
     }
 
     /* renamed from: partition-Aa5vz7o  reason: not valid java name */
-    private static final int m497partitionAa5vz7o(short[] array, int left, int right) {
+    private static final int m499partitionAa5vz7o(short[] array, int left, int right) {
         int i = left;
         int j = right;
-        short pivot = UShortArray.m379getMh2AYeg(array, (left + right) / 2);
+        short pivot = UShortArray.m381getMh2AYeg(array, (left + right) / 2);
         while (i <= j) {
-            while (Intrinsics.compare(UShortArray.m379getMh2AYeg(array, i) & UShort.MAX_VALUE, pivot & UShort.MAX_VALUE) < 0) {
+            while (Intrinsics.compare(UShortArray.m381getMh2AYeg(array, i) & UShort.MAX_VALUE, pivot & UShort.MAX_VALUE) < 0) {
                 i++;
             }
-            while (Intrinsics.compare(UShortArray.m379getMh2AYeg(array, j) & UShort.MAX_VALUE, pivot & UShort.MAX_VALUE) > 0) {
+            while (Intrinsics.compare(UShortArray.m381getMh2AYeg(array, j) & UShort.MAX_VALUE, pivot & UShort.MAX_VALUE) > 0) {
                 j--;
             }
             if (i <= j) {
-                short tmp = UShortArray.m379getMh2AYeg(array, i);
-                UShortArray.m384set01HTLdE(array, i, UShortArray.m379getMh2AYeg(array, j));
-                UShortArray.m384set01HTLdE(array, j, tmp);
+                short tmp = UShortArray.m381getMh2AYeg(array, i);
+                UShortArray.m386set01HTLdE(array, i, UShortArray.m381getMh2AYeg(array, j));
+                UShortArray.m386set01HTLdE(array, j, tmp);
                 i++;
                 j--;
             }
@@ -71,32 +71,32 @@ public final class UArraySortingKt {
     }
 
     /* renamed from: quickSort-Aa5vz7o  reason: not valid java name */
-    private static final void m501quickSortAa5vz7o(short[] array, int left, int right) {
-        int index = m497partitionAa5vz7o(array, left, right);
+    private static final void m503quickSortAa5vz7o(short[] array, int left, int right) {
+        int index = m499partitionAa5vz7o(array, left, right);
         if (left < index - 1) {
-            m501quickSortAa5vz7o(array, left, index - 1);
+            m503quickSortAa5vz7o(array, left, index - 1);
         }
         if (index < right) {
-            m501quickSortAa5vz7o(array, index, right);
+            m503quickSortAa5vz7o(array, index, right);
         }
     }
 
     /* renamed from: partition-oBK06Vg  reason: not valid java name */
-    private static final int m498partitionoBK06Vg(int[] array, int left, int right) {
+    private static final int m500partitionoBK06Vg(int[] array, int left, int right) {
         int i = left;
         int j = right;
-        int pivot = UIntArray.m197getpVg5ArA(array, (left + right) / 2);
+        int pivot = UIntArray.m199getpVg5ArA(array, (left + right) / 2);
         while (i <= j) {
-            while (UnsignedKt.uintCompare(UIntArray.m197getpVg5ArA(array, i), pivot) < 0) {
+            while (UnsignedKt.uintCompare(UIntArray.m199getpVg5ArA(array, i), pivot) < 0) {
                 i++;
             }
-            while (UnsignedKt.uintCompare(UIntArray.m197getpVg5ArA(array, j), pivot) > 0) {
+            while (UnsignedKt.uintCompare(UIntArray.m199getpVg5ArA(array, j), pivot) > 0) {
                 j--;
             }
             if (i <= j) {
-                int tmp = UIntArray.m197getpVg5ArA(array, i);
-                UIntArray.m202setVXSXFK8(array, i, UIntArray.m197getpVg5ArA(array, j));
-                UIntArray.m202setVXSXFK8(array, j, tmp);
+                int tmp = UIntArray.m199getpVg5ArA(array, i);
+                UIntArray.m204setVXSXFK8(array, i, UIntArray.m199getpVg5ArA(array, j));
+                UIntArray.m204setVXSXFK8(array, j, tmp);
                 i++;
                 j--;
             }
@@ -105,32 +105,32 @@ public final class UArraySortingKt {
     }
 
     /* renamed from: quickSort-oBK06Vg  reason: not valid java name */
-    private static final void m502quickSortoBK06Vg(int[] array, int left, int right) {
-        int index = m498partitionoBK06Vg(array, left, right);
+    private static final void m504quickSortoBK06Vg(int[] array, int left, int right) {
+        int index = m500partitionoBK06Vg(array, left, right);
         if (left < index - 1) {
-            m502quickSortoBK06Vg(array, left, index - 1);
+            m504quickSortoBK06Vg(array, left, index - 1);
         }
         if (index < right) {
-            m502quickSortoBK06Vg(array, index, right);
+            m504quickSortoBK06Vg(array, index, right);
         }
     }
 
     /* renamed from: partition--nroSd4  reason: not valid java name */
-    private static final int m495partitionnroSd4(long[] array, int left, int right) {
+    private static final int m497partitionnroSd4(long[] array, int left, int right) {
         int i = left;
         int j = right;
-        long pivot = ULongArray.m275getsVKNKU(array, (left + right) / 2);
+        long pivot = ULongArray.m277getsVKNKU(array, (left + right) / 2);
         while (i <= j) {
-            while (UnsignedKt.ulongCompare(ULongArray.m275getsVKNKU(array, i), pivot) < 0) {
+            while (UnsignedKt.ulongCompare(ULongArray.m277getsVKNKU(array, i), pivot) < 0) {
                 i++;
             }
-            while (UnsignedKt.ulongCompare(ULongArray.m275getsVKNKU(array, j), pivot) > 0) {
+            while (UnsignedKt.ulongCompare(ULongArray.m277getsVKNKU(array, j), pivot) > 0) {
                 j--;
             }
             if (i <= j) {
-                long tmp = ULongArray.m275getsVKNKU(array, i);
-                ULongArray.m280setk8EXiF4(array, i, ULongArray.m275getsVKNKU(array, j));
-                ULongArray.m280setk8EXiF4(array, j, tmp);
+                long tmp = ULongArray.m277getsVKNKU(array, i);
+                ULongArray.m282setk8EXiF4(array, i, ULongArray.m277getsVKNKU(array, j));
+                ULongArray.m282setk8EXiF4(array, j, tmp);
                 i++;
                 j--;
             }
@@ -139,37 +139,37 @@ public final class UArraySortingKt {
     }
 
     /* renamed from: quickSort--nroSd4  reason: not valid java name */
-    private static final void m499quickSortnroSd4(long[] array, int left, int right) {
-        int index = m495partitionnroSd4(array, left, right);
+    private static final void m501quickSortnroSd4(long[] array, int left, int right) {
+        int index = m497partitionnroSd4(array, left, right);
         if (left < index - 1) {
-            m499quickSortnroSd4(array, left, index - 1);
+            m501quickSortnroSd4(array, left, index - 1);
         }
         if (index < right) {
-            m499quickSortnroSd4(array, index, right);
+            m501quickSortnroSd4(array, index, right);
         }
     }
 
     /* renamed from: sortArray-4UcCI2c  reason: not valid java name */
-    public static final void m504sortArray4UcCI2c(byte[] array, int fromIndex, int toIndex) {
+    public static final void m506sortArray4UcCI2c(byte[] array, int fromIndex, int toIndex) {
         Intrinsics.checkNotNullParameter(array, "array");
-        m500quickSort4UcCI2c(array, fromIndex, toIndex - 1);
+        m502quickSort4UcCI2c(array, fromIndex, toIndex - 1);
     }
 
     /* renamed from: sortArray-Aa5vz7o  reason: not valid java name */
-    public static final void m505sortArrayAa5vz7o(short[] array, int fromIndex, int toIndex) {
+    public static final void m507sortArrayAa5vz7o(short[] array, int fromIndex, int toIndex) {
         Intrinsics.checkNotNullParameter(array, "array");
-        m501quickSortAa5vz7o(array, fromIndex, toIndex - 1);
+        m503quickSortAa5vz7o(array, fromIndex, toIndex - 1);
     }
 
     /* renamed from: sortArray-oBK06Vg  reason: not valid java name */
-    public static final void m506sortArrayoBK06Vg(int[] array, int fromIndex, int toIndex) {
+    public static final void m508sortArrayoBK06Vg(int[] array, int fromIndex, int toIndex) {
         Intrinsics.checkNotNullParameter(array, "array");
-        m502quickSortoBK06Vg(array, fromIndex, toIndex - 1);
+        m504quickSortoBK06Vg(array, fromIndex, toIndex - 1);
     }
 
     /* renamed from: sortArray--nroSd4  reason: not valid java name */
-    public static final void m503sortArraynroSd4(long[] array, int fromIndex, int toIndex) {
+    public static final void m505sortArraynroSd4(long[] array, int fromIndex, int toIndex) {
         Intrinsics.checkNotNullParameter(array, "array");
-        m499quickSortnroSd4(array, fromIndex, toIndex - 1);
+        m501quickSortnroSd4(array, fromIndex, toIndex - 1);
     }
 }

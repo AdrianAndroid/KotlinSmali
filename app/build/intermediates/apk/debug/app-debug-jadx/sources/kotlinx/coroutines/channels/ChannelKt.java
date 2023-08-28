@@ -10,12 +10,12 @@ import kotlinx.coroutines.channels.ChannelResult;
 public final class ChannelKt {
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: getOrElse-WpGqRn0 */
-    public static final <T> T m1536getOrElseWpGqRn0(Object $this$getOrElse, Function1<? super Throwable, ? extends T> function1) {
-        return $this$getOrElse instanceof ChannelResult.Failed ? function1.invoke(ChannelResult.m1544exceptionOrNullimpl($this$getOrElse)) : $this$getOrElse;
+    public static final <T> T m1538getOrElseWpGqRn0(Object $this$getOrElse, Function1<? super Throwable, ? extends T> function1) {
+        return $this$getOrElse instanceof ChannelResult.Failed ? function1.invoke(ChannelResult.m1546exceptionOrNullimpl($this$getOrElse)) : $this$getOrElse;
     }
 
     /* renamed from: onSuccess-WpGqRn0 */
-    public static final <T> Object m1539onSuccessWpGqRn0(Object $this$onSuccess, Function1<? super T, Unit> function1) {
+    public static final <T> Object m1541onSuccessWpGqRn0(Object $this$onSuccess, Function1<? super T, Unit> function1) {
         if (!($this$onSuccess instanceof ChannelResult.Failed)) {
             function1.invoke($this$onSuccess);
         }
@@ -23,17 +23,17 @@ public final class ChannelKt {
     }
 
     /* renamed from: onFailure-WpGqRn0 */
-    public static final <T> Object m1538onFailureWpGqRn0(Object $this$onFailure, Function1<? super Throwable, Unit> function1) {
+    public static final <T> Object m1540onFailureWpGqRn0(Object $this$onFailure, Function1<? super Throwable, Unit> function1) {
         if ($this$onFailure instanceof ChannelResult.Failed) {
-            function1.invoke(ChannelResult.m1544exceptionOrNullimpl($this$onFailure));
+            function1.invoke(ChannelResult.m1546exceptionOrNullimpl($this$onFailure));
         }
         return $this$onFailure;
     }
 
     /* renamed from: onClosed-WpGqRn0 */
-    public static final <T> Object m1537onClosedWpGqRn0(Object $this$onClosed, Function1<? super Throwable, Unit> function1) {
+    public static final <T> Object m1539onClosedWpGqRn0(Object $this$onClosed, Function1<? super Throwable, Unit> function1) {
         if ($this$onClosed instanceof ChannelResult.Closed) {
-            function1.invoke(ChannelResult.m1544exceptionOrNullimpl($this$onClosed));
+            function1.invoke(ChannelResult.m1546exceptionOrNullimpl($this$onClosed));
         }
         return $this$onClosed;
     }

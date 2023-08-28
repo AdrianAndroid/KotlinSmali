@@ -128,9 +128,9 @@ public final class SelectBuilderImpl<R> extends LockFreeLinkedListHead implement
                 Object update$iv2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
                 if (result$iv == update$iv2) {
                     if (AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0.m(_result$FU, this, IntrinsicsKt.getCOROUTINE_SUSPENDED(), SelectKt.access$getRESUMED$p())) {
-                        if (Result.m50isFailureimpl(result)) {
+                        if (Result.m52isFailureimpl(result)) {
                             Continuation $this$resumeWithStackTrace$iv = this.uCont;
-                            Throwable exception$iv = Result.m47exceptionOrNullimpl(result);
+                            Throwable exception$iv = Result.m49exceptionOrNullimpl(result);
                             Intrinsics.checkNotNull(exception$iv);
                             Result.Companion companion = Result.Companion;
                             if (DebugKt.getRECOVER_STACK_TRACES() && ($this$resumeWithStackTrace$iv instanceof CoroutineStackFrame)) {
@@ -138,7 +138,7 @@ public final class SelectBuilderImpl<R> extends LockFreeLinkedListHead implement
                             } else {
                                 th = exception$iv;
                             }
-                            $this$resumeWithStackTrace$iv.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(th)));
+                            $this$resumeWithStackTrace$iv.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(th)));
                             return;
                         }
                         this.uCont.resumeWith(result);
@@ -176,7 +176,7 @@ public final class SelectBuilderImpl<R> extends LockFreeLinkedListHead implement
                     if (AbstractResolvableFuture$SafeAtomicHelper$$ExternalSyntheticBackportWithForwarding0.m(_result$FU, this, IntrinsicsKt.getCOROUTINE_SUSPENDED(), SelectKt.access$getRESUMED$p())) {
                         Continuation intercepted = IntrinsicsKt.intercepted(this.uCont);
                         Result.Companion companion = Result.Companion;
-                        intercepted.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(exception)));
+                        intercepted.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(exception)));
                         return;
                     }
                 } else {
@@ -245,7 +245,7 @@ public final class SelectBuilderImpl<R> extends LockFreeLinkedListHead implement
     public final void handleBuilderException(Throwable e) {
         if (trySelect()) {
             Result.Companion companion = Result.Companion;
-            resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e)));
+            resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e)));
         } else if (!(e instanceof CancellationException)) {
             Object result = getResult();
             if (result instanceof CompletedExceptionally) {

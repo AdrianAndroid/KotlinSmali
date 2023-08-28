@@ -11,13 +11,13 @@ import kotlin.time.DurationUnit;
 public final class DurationConversionsJDK8Kt {
     private static final long toKotlinDuration(Duration $this$toKotlinDuration) {
         Intrinsics.checkNotNullParameter($this$toKotlinDuration, "<this>");
-        return kotlin.time.Duration.m1395plusLRDsOJo(DurationKt.toDuration($this$toKotlinDuration.getSeconds(), DurationUnit.SECONDS), DurationKt.toDuration($this$toKotlinDuration.getNano(), DurationUnit.NANOSECONDS));
+        return kotlin.time.Duration.m1397plusLRDsOJo(DurationKt.toDuration($this$toKotlinDuration.getSeconds(), DurationUnit.SECONDS), DurationKt.toDuration($this$toKotlinDuration.getNano(), DurationUnit.NANOSECONDS));
     }
 
     /* renamed from: toJavaDuration-LRDsOJo  reason: not valid java name */
-    private static final Duration m1515toJavaDurationLRDsOJo(long $this$toJavaDuration_u2dLRDsOJo) {
-        long seconds = kotlin.time.Duration.m1380getInWholeSecondsimpl($this$toJavaDuration_u2dLRDsOJo);
-        int nanoseconds = kotlin.time.Duration.m1382getNanosecondsComponentimpl($this$toJavaDuration_u2dLRDsOJo);
+    private static final Duration m1517toJavaDurationLRDsOJo(long $this$toJavaDuration_u2dLRDsOJo) {
+        long seconds = kotlin.time.Duration.m1382getInWholeSecondsimpl($this$toJavaDuration_u2dLRDsOJo);
+        int nanoseconds = kotlin.time.Duration.m1384getNanosecondsComponentimpl($this$toJavaDuration_u2dLRDsOJo);
         Duration ofSeconds = Duration.ofSeconds(seconds, nanoseconds);
         Intrinsics.checkNotNullExpressionValue(ofSeconds, "toJavaDuration-LRDsOJo");
         return ofSeconds;

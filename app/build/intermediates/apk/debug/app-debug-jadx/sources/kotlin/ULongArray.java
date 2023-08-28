@@ -16,23 +16,23 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
     private final long[] storage;
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ ULongArray m268boximpl(long[] jArr) {
+    public static final /* synthetic */ ULongArray m270boximpl(long[] jArr) {
         return new ULongArray(jArr);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long[] m270constructorimpl(long[] storage) {
+    public static long[] m272constructorimpl(long[] storage) {
         Intrinsics.checkNotNullParameter(storage, "storage");
         return storage;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m273equalsimpl(long[] jArr, Object obj) {
-        return (obj instanceof ULongArray) && Intrinsics.areEqual(jArr, ((ULongArray) obj).m284unboximpl());
+    public static boolean m275equalsimpl(long[] jArr, Object obj) {
+        return (obj instanceof ULongArray) && Intrinsics.areEqual(jArr, ((ULongArray) obj).m286unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m274equalsimpl0(long[] jArr, long[] jArr2) {
+    public static final boolean m276equalsimpl0(long[] jArr, long[] jArr2) {
         return Intrinsics.areEqual(jArr, jArr2);
     }
 
@@ -40,12 +40,12 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m277hashCodeimpl(long[] jArr) {
+    public static int m279hashCodeimpl(long[] jArr) {
         return Arrays.hashCode(jArr);
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m281toStringimpl(long[] jArr) {
+    public static String m283toStringimpl(long[] jArr) {
         return "ULongArray(storage=" + Arrays.toString(jArr) + ')';
     }
 
@@ -55,7 +55,7 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
     }
 
     /* renamed from: add-VKZWuLQ  reason: not valid java name */
-    public boolean m282addVKZWuLQ(long j) {
+    public boolean m284addVKZWuLQ(long j) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
@@ -71,12 +71,12 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
 
     @Override // java.util.Collection
     public boolean equals(Object obj) {
-        return m273equalsimpl(this.storage, obj);
+        return m275equalsimpl(this.storage, obj);
     }
 
     @Override // java.util.Collection
     public int hashCode() {
-        return m277hashCodeimpl(this.storage);
+        return m279hashCodeimpl(this.storage);
     }
 
     @Override // java.util.Collection
@@ -106,18 +106,18 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
     }
 
     public String toString() {
-        return m281toStringimpl(this.storage);
+        return m283toStringimpl(this.storage);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long[] m284unboximpl() {
+    public final /* synthetic */ long[] m286unboximpl() {
         return this.storage;
     }
 
     @Override // java.util.Collection
     public final /* bridge */ boolean contains(Object element) {
         if (element instanceof ULong) {
-            return m283containsVKZWuLQ(((ULong) element).m267unboximpl());
+            return m285containsVKZWuLQ(((ULong) element).m269unboximpl());
         }
         return false;
     }
@@ -127,39 +127,39 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long[] m269constructorimpl(int size) {
-        return m270constructorimpl(new long[size]);
+    public static long[] m271constructorimpl(int size) {
+        return m272constructorimpl(new long[size]);
     }
 
     /* renamed from: get-s-VKNKU  reason: not valid java name */
-    public static final long m275getsVKNKU(long[] arg0, int index) {
-        return ULong.m216constructorimpl(arg0[index]);
+    public static final long m277getsVKNKU(long[] arg0, int index) {
+        return ULong.m218constructorimpl(arg0[index]);
     }
 
     /* renamed from: set-k8EXiF4  reason: not valid java name */
-    public static final void m280setk8EXiF4(long[] arg0, int index, long value) {
+    public static final void m282setk8EXiF4(long[] arg0, int index, long value) {
         arg0[index] = value;
     }
 
     /* renamed from: getSize-impl  reason: not valid java name */
-    public static int m276getSizeimpl(long[] arg0) {
+    public static int m278getSizeimpl(long[] arg0) {
         return arg0.length;
     }
 
     @Override // java.util.Collection
     /* renamed from: getSize */
     public int size() {
-        return m276getSizeimpl(this.storage);
+        return m278getSizeimpl(this.storage);
     }
 
     /* renamed from: iterator-impl  reason: not valid java name */
-    public static java.util.Iterator<ULong> m279iteratorimpl(long[] arg0) {
+    public static java.util.Iterator<ULong> m281iteratorimpl(long[] arg0) {
         return new Iterator(arg0);
     }
 
     @Override // java.util.Collection, java.lang.Iterable
     public java.util.Iterator<ULong> iterator() {
-        return m279iteratorimpl(this.storage);
+        return m281iteratorimpl(this.storage);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -182,7 +182,7 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
 
         @Override // java.util.Iterator
         public /* bridge */ /* synthetic */ ULong next() {
-            return ULong.m210boximpl(m285nextsVKNKU());
+            return ULong.m212boximpl(m287nextsVKNKU());
         }
 
         @Override // java.util.Iterator
@@ -191,35 +191,35 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
         }
 
         /* renamed from: next-s-VKNKU  reason: not valid java name */
-        public long m285nextsVKNKU() {
+        public long m287nextsVKNKU() {
             int i = this.index;
             long[] jArr = this.array;
             if (i < jArr.length) {
                 this.index = i + 1;
-                return ULong.m216constructorimpl(jArr[i]);
+                return ULong.m218constructorimpl(jArr[i]);
             }
             throw new NoSuchElementException(String.valueOf(this.index));
         }
     }
 
     /* renamed from: contains-VKZWuLQ  reason: not valid java name */
-    public boolean m283containsVKZWuLQ(long element) {
-        return m271containsVKZWuLQ(this.storage, element);
+    public boolean m285containsVKZWuLQ(long element) {
+        return m273containsVKZWuLQ(this.storage, element);
     }
 
     /* renamed from: contains-VKZWuLQ  reason: not valid java name */
-    public static boolean m271containsVKZWuLQ(long[] arg0, long element) {
+    public static boolean m273containsVKZWuLQ(long[] arg0, long element) {
         return ArraysKt.contains(arg0, element);
     }
 
     @Override // java.util.Collection
     public boolean containsAll(Collection<? extends Object> elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        return m272containsAllimpl(this.storage, elements);
+        return m274containsAllimpl(this.storage, elements);
     }
 
     /* renamed from: containsAll-impl  reason: not valid java name */
-    public static boolean m272containsAllimpl(long[] arg0, Collection<ULong> elements) {
+    public static boolean m274containsAllimpl(long[] arg0, Collection<ULong> elements) {
         Object it;
         Intrinsics.checkNotNullParameter(elements, "elements");
         Collection<ULong> $this$all$iv = elements;
@@ -227,7 +227,7 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
             return true;
         }
         for (Object element$iv : $this$all$iv) {
-            if ((element$iv instanceof ULong) && ArraysKt.contains(arg0, ((ULong) element$iv).m267unboximpl())) {
+            if ((element$iv instanceof ULong) && ArraysKt.contains(arg0, ((ULong) element$iv).m269unboximpl())) {
                 it = 1;
                 continue;
             } else {
@@ -242,12 +242,12 @@ public final class ULongArray implements Collection<ULong>, KMappedMarker {
     }
 
     /* renamed from: isEmpty-impl  reason: not valid java name */
-    public static boolean m278isEmptyimpl(long[] arg0) {
+    public static boolean m280isEmptyimpl(long[] arg0) {
         return arg0.length == 0;
     }
 
     @Override // java.util.Collection
     public boolean isEmpty() {
-        return m278isEmptyimpl(this.storage);
+        return m280isEmptyimpl(this.storage);
     }
 }

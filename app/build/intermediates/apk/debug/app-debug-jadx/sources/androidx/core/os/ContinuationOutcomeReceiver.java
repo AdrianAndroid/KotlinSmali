@@ -27,7 +27,7 @@ final class ContinuationOutcomeReceiver<R, E extends Throwable> extends AtomicBo
         if (compareAndSet(false, true)) {
             Continuation<R> continuation = this.continuation;
             Result.Companion companion = Result.Companion;
-            continuation.resumeWith(Result.m44constructorimpl(r));
+            continuation.resumeWith(Result.m46constructorimpl(r));
         }
     }
 
@@ -37,7 +37,7 @@ final class ContinuationOutcomeReceiver<R, E extends Throwable> extends AtomicBo
         if (compareAndSet(false, true)) {
             Continuation<R> continuation = this.continuation;
             Result.Companion companion = Result.Companion;
-            continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(error)));
+            continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(error)));
         }
     }
 

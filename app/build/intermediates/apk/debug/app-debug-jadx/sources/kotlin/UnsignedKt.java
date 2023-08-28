@@ -15,45 +15,45 @@ public final class UnsignedKt {
     }
 
     /* renamed from: uintDivide-J1ME1BU  reason: not valid java name */
-    public static final int m391uintDivideJ1ME1BU(int v1, int v2) {
-        return UInt.m138constructorimpl((int) ((v1 & 4294967295L) / (4294967295L & v2)));
+    public static final int m393uintDivideJ1ME1BU(int v1, int v2) {
+        return UInt.m140constructorimpl((int) ((v1 & 4294967295L) / (4294967295L & v2)));
     }
 
     /* renamed from: uintRemainder-J1ME1BU  reason: not valid java name */
-    public static final int m392uintRemainderJ1ME1BU(int v1, int v2) {
-        return UInt.m138constructorimpl((int) ((v1 & 4294967295L) % (4294967295L & v2)));
+    public static final int m394uintRemainderJ1ME1BU(int v1, int v2) {
+        return UInt.m140constructorimpl((int) ((v1 & 4294967295L) % (4294967295L & v2)));
     }
 
     /* renamed from: ulongDivide-eb3DHEI  reason: not valid java name */
-    public static final long m393ulongDivideeb3DHEI(long v1, long v2) {
+    public static final long m395ulongDivideeb3DHEI(long v1, long v2) {
         if (v2 < 0) {
-            return ULong.m216constructorimpl(ulongCompare(v1, v2) >= 0 ? 1L : 0L);
+            return ULong.m218constructorimpl(ulongCompare(v1, v2) >= 0 ? 1L : 0L);
         } else if (v1 >= 0) {
-            return ULong.m216constructorimpl(v1 / v2);
+            return ULong.m218constructorimpl(v1 / v2);
         } else {
             long quotient = ((v1 >>> 1) / v2) << 1;
             long rem = v1 - (quotient * v2);
-            return ULong.m216constructorimpl((ulongCompare(ULong.m216constructorimpl(rem), ULong.m216constructorimpl(v2)) < 0 ? 0 : 1) + quotient);
+            return ULong.m218constructorimpl((ulongCompare(ULong.m218constructorimpl(rem), ULong.m218constructorimpl(v2)) < 0 ? 0 : 1) + quotient);
         }
     }
 
     /* renamed from: ulongRemainder-eb3DHEI  reason: not valid java name */
-    public static final long m394ulongRemaindereb3DHEI(long v1, long v2) {
+    public static final long m396ulongRemaindereb3DHEI(long v1, long v2) {
         long j = 0;
         if (v2 < 0) {
             if (ulongCompare(v1, v2) < 0) {
                 return v1;
             }
-            return ULong.m216constructorimpl(v1 - v2);
+            return ULong.m218constructorimpl(v1 - v2);
         } else if (v1 >= 0) {
-            return ULong.m216constructorimpl(v1 % v2);
+            return ULong.m218constructorimpl(v1 % v2);
         } else {
             long quotient = ((v1 >>> 1) / v2) << 1;
             long rem = v1 - (quotient * v2);
-            if (ulongCompare(ULong.m216constructorimpl(rem), ULong.m216constructorimpl(v2)) >= 0) {
+            if (ulongCompare(ULong.m218constructorimpl(rem), ULong.m218constructorimpl(v2)) >= 0) {
                 j = v2;
             }
-            return ULong.m216constructorimpl(rem - j);
+            return ULong.m218constructorimpl(rem - j);
         }
     }
 
@@ -62,7 +62,7 @@ public final class UnsignedKt {
             if (v >= uintToDouble(-1)) {
                 return -1;
             }
-            return v <= 2.147483647E9d ? UInt.m138constructorimpl((int) v) : UInt.m138constructorimpl(UInt.m138constructorimpl((int) (v - Integer.MAX_VALUE)) + UInt.m138constructorimpl(Integer.MAX_VALUE));
+            return v <= 2.147483647E9d ? UInt.m140constructorimpl((int) v) : UInt.m140constructorimpl(UInt.m140constructorimpl((int) (v - Integer.MAX_VALUE)) + UInt.m140constructorimpl(Integer.MAX_VALUE));
         }
         return 0;
     }
@@ -72,7 +72,7 @@ public final class UnsignedKt {
             if (v >= ulongToDouble(-1L)) {
                 return -1L;
             }
-            return v < 9.223372036854776E18d ? ULong.m216constructorimpl((long) v) : ULong.m216constructorimpl(ULong.m216constructorimpl((long) (v - 9.223372036854776E18d)) - Long.MIN_VALUE);
+            return v < 9.223372036854776E18d ? ULong.m218constructorimpl((long) v) : ULong.m218constructorimpl(ULong.m218constructorimpl((long) (v - 9.223372036854776E18d)) - Long.MIN_VALUE);
         }
         return 0L;
     }

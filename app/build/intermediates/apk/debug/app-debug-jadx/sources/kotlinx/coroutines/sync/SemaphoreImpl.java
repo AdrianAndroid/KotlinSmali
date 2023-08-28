@@ -141,7 +141,7 @@ public final class SemaphoreImpl implements Semaphore {
     public final boolean addAcquireToQueue(CancellableContinuation<? super Unit> cancellableContinuation) {
         int i;
         SemaphoreSegment curTail;
-        Object m1584constructorimpl;
+        Object m1586constructorimpl;
         Segment createSegment;
         Object s$iv;
         int i2;
@@ -162,7 +162,7 @@ public final class SemaphoreImpl implements Semaphore {
                     Object it$iv$iv$iv = this_$iv$iv$iv.getNextOrClosed();
                     curTail = s$iv2;
                     if (it$iv$iv$iv == ConcurrentLinkedListKt.CLOSED) {
-                        m1584constructorimpl = SegmentOrClosed.m1584constructorimpl(ConcurrentLinkedListKt.CLOSED);
+                        m1586constructorimpl = SegmentOrClosed.m1586constructorimpl(ConcurrentLinkedListKt.CLOSED);
                         break;
                     }
                     Segment next$iv$iv = (Segment) ((ConcurrentLinkedListNode) it$iv$iv$iv);
@@ -185,16 +185,16 @@ public final class SemaphoreImpl implements Semaphore {
                         }
                     }
                 } else {
-                    m1584constructorimpl = SegmentOrClosed.m1584constructorimpl(cur$iv$iv);
+                    m1586constructorimpl = SegmentOrClosed.m1586constructorimpl(cur$iv$iv);
                     curTail = s$iv2;
                     break;
                 }
             }
-            s$iv = m1584constructorimpl;
-            if (SegmentOrClosed.m1589isClosedimpl(s$iv)) {
+            s$iv = m1586constructorimpl;
+            if (SegmentOrClosed.m1591isClosedimpl(s$iv)) {
                 break;
             }
-            Segment to$iv$iv = SegmentOrClosed.m1587getSegmentimpl(s$iv);
+            Segment to$iv$iv = SegmentOrClosed.m1589getSegmentimpl(s$iv);
             while (true) {
                 Segment cur$iv$iv2 = (Segment) this.tail;
                 if (cur$iv$iv2.getId() >= to$iv$iv.getId()) {
@@ -217,7 +217,7 @@ public final class SemaphoreImpl implements Semaphore {
             }
             s$iv2 = curTail;
         }
-        SemaphoreSegment segment = (SemaphoreSegment) SegmentOrClosed.m1587getSegmentimpl(s$iv);
+        SemaphoreSegment segment = (SemaphoreSegment) SegmentOrClosed.m1589getSegmentimpl(s$iv);
         i2 = SemaphoreKt.SEGMENT_SIZE;
         int i3 = (int) (enqIdx % i2);
         if (!segment.acquirers.compareAndSet(i3, null, cancellableContinuation)) {
@@ -245,7 +245,7 @@ public final class SemaphoreImpl implements Semaphore {
     /* JADX WARN: Multi-variable type inference failed */
     private final boolean tryResumeNextFromQueue() {
         int i;
-        Object m1584constructorimpl;
+        Object m1586constructorimpl;
         Segment createSegment;
         Object s$iv;
         int i2;
@@ -268,7 +268,7 @@ public final class SemaphoreImpl implements Semaphore {
                     ConcurrentLinkedListNode this_$iv$iv$iv = cur$iv$iv;
                     Object it$iv$iv$iv = this_$iv$iv$iv.getNextOrClosed();
                     if (it$iv$iv$iv == ConcurrentLinkedListKt.CLOSED) {
-                        m1584constructorimpl = SegmentOrClosed.m1584constructorimpl(ConcurrentLinkedListKt.CLOSED);
+                        m1586constructorimpl = SegmentOrClosed.m1586constructorimpl(ConcurrentLinkedListKt.CLOSED);
                         break;
                     }
                     Segment next$iv$iv = (Segment) ((ConcurrentLinkedListNode) it$iv$iv$iv);
@@ -287,15 +287,15 @@ public final class SemaphoreImpl implements Semaphore {
                         }
                     }
                 } else {
-                    m1584constructorimpl = SegmentOrClosed.m1584constructorimpl(cur$iv$iv);
+                    m1586constructorimpl = SegmentOrClosed.m1586constructorimpl(cur$iv$iv);
                     break;
                 }
             }
-            s$iv = m1584constructorimpl;
-            if (SegmentOrClosed.m1589isClosedimpl(s$iv)) {
+            s$iv = m1586constructorimpl;
+            if (SegmentOrClosed.m1591isClosedimpl(s$iv)) {
                 break;
             }
-            Segment to$iv$iv = SegmentOrClosed.m1587getSegmentimpl(s$iv);
+            Segment to$iv$iv = SegmentOrClosed.m1589getSegmentimpl(s$iv);
             while (true) {
                 Segment cur$iv$iv2 = (Segment) this.head;
                 if (cur$iv$iv2.getId() >= to$iv$iv.getId()) {
@@ -317,7 +317,7 @@ public final class SemaphoreImpl implements Semaphore {
                 }
             }
         } while (!z);
-        SemaphoreSegment segment = (SemaphoreSegment) SegmentOrClosed.m1587getSegmentimpl(s$iv);
+        SemaphoreSegment segment = (SemaphoreSegment) SegmentOrClosed.m1589getSegmentimpl(s$iv);
         segment.cleanPrev();
         if (segment.getId() > id) {
             return false;

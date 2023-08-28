@@ -27,7 +27,7 @@ public interface SendChannel<E> {
     Object send(E e, Continuation<? super Unit> continuation);
 
     /* renamed from: trySend-JP2dKIU */
-    Object mo1535trySendJP2dKIU(E e);
+    Object mo1537trySendJP2dKIU(E e);
 
     /* compiled from: Channel.kt */
     @Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
@@ -49,15 +49,15 @@ public interface SendChannel<E> {
         /* JADX WARN: Multi-variable type inference failed */
         @Deprecated(level = DeprecationLevel.ERROR, message = "Deprecated in the favour of 'trySend' method", replaceWith = @ReplaceWith(expression = "trySend(element).isSuccess", imports = {}))
         public static <E> boolean offer(SendChannel<? super E> sendChannel, E e) {
-            Object result = sendChannel.mo1535trySendJP2dKIU(e);
-            if (ChannelResult.m1550isSuccessimpl(result)) {
+            Object result = sendChannel.mo1537trySendJP2dKIU(e);
+            if (ChannelResult.m1552isSuccessimpl(result)) {
                 return true;
             }
-            Throwable m1544exceptionOrNullimpl = ChannelResult.m1544exceptionOrNullimpl(result);
-            if (m1544exceptionOrNullimpl == null) {
+            Throwable m1546exceptionOrNullimpl = ChannelResult.m1546exceptionOrNullimpl(result);
+            if (m1546exceptionOrNullimpl == null) {
                 return false;
             }
-            throw StackTraceRecoveryKt.recoverStackTrace(m1544exceptionOrNullimpl);
+            throw StackTraceRecoveryKt.recoverStackTrace(m1546exceptionOrNullimpl);
         }
     }
 }

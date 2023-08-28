@@ -31,10 +31,10 @@ public final class UndispatchedKt {
                 return;
             }
             Result.Companion companion = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(value$iv));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(value$iv));
         } catch (Throwable e$iv) {
             Result.Companion companion2 = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e$iv)));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e$iv)));
         }
     }
 
@@ -46,10 +46,10 @@ public final class UndispatchedKt {
                 return;
             }
             Result.Companion companion = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(value$iv));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(value$iv));
         } catch (Throwable e$iv) {
             Result.Companion companion2 = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e$iv)));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e$iv)));
         }
     }
 
@@ -64,10 +64,10 @@ public final class UndispatchedKt {
                 return;
             }
             Result.Companion companion = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(value$iv));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(value$iv));
         } catch (Throwable e$iv) {
             Result.Companion companion2 = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e$iv)));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e$iv)));
         }
     }
 
@@ -82,10 +82,10 @@ public final class UndispatchedKt {
                 return;
             }
             Result.Companion companion = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(value$iv));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(value$iv));
         } catch (Throwable e$iv) {
             Result.Companion companion2 = Result.Companion;
-            actualCompletion$iv.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e$iv)));
+            actualCompletion$iv.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e$iv)));
         }
     }
 
@@ -95,11 +95,11 @@ public final class UndispatchedKt {
             Object value = function1.invoke(actualCompletion);
             if (value != IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
                 Result.Companion companion = Result.Companion;
-                actualCompletion.resumeWith(Result.m44constructorimpl(value));
+                actualCompletion.resumeWith(Result.m46constructorimpl(value));
             }
         } catch (Throwable e) {
             Result.Companion companion2 = Result.Companion;
-            actualCompletion.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e)));
+            actualCompletion.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e)));
         }
     }
 

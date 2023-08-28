@@ -17,11 +17,11 @@ import kotlin.jvm.internal.Intrinsics;
 class UCollectionsKt___UCollectionsKt {
     public static final byte[] toUByteArray(Collection<UByte> collection) {
         Intrinsics.checkNotNullParameter(collection, "<this>");
-        byte[] result = UByteArray.m113constructorimpl(collection.size());
+        byte[] result = UByteArray.m115constructorimpl(collection.size());
         int index = 0;
         for (UByte uByte : collection) {
-            byte element = uByte.m111unboximpl();
-            UByteArray.m124setVurrAj0(result, index, element);
+            byte element = uByte.m113unboximpl();
+            UByteArray.m126setVurrAj0(result, index, element);
             index++;
         }
         return result;
@@ -29,11 +29,11 @@ class UCollectionsKt___UCollectionsKt {
 
     public static final int[] toUIntArray(Collection<UInt> collection) {
         Intrinsics.checkNotNullParameter(collection, "<this>");
-        int[] result = UIntArray.m191constructorimpl(collection.size());
+        int[] result = UIntArray.m193constructorimpl(collection.size());
         int index = 0;
         for (UInt uInt : collection) {
-            int element = uInt.m189unboximpl();
-            UIntArray.m202setVXSXFK8(result, index, element);
+            int element = uInt.m191unboximpl();
+            UIntArray.m204setVXSXFK8(result, index, element);
             index++;
         }
         return result;
@@ -41,11 +41,11 @@ class UCollectionsKt___UCollectionsKt {
 
     public static final long[] toULongArray(Collection<ULong> collection) {
         Intrinsics.checkNotNullParameter(collection, "<this>");
-        long[] result = ULongArray.m269constructorimpl(collection.size());
+        long[] result = ULongArray.m271constructorimpl(collection.size());
         int index = 0;
         for (ULong uLong : collection) {
-            long element = uLong.m267unboximpl();
-            ULongArray.m280setk8EXiF4(result, index, element);
+            long element = uLong.m269unboximpl();
+            ULongArray.m282setk8EXiF4(result, index, element);
             index++;
         }
         return result;
@@ -53,11 +53,11 @@ class UCollectionsKt___UCollectionsKt {
 
     public static final short[] toUShortArray(Collection<UShort> collection) {
         Intrinsics.checkNotNullParameter(collection, "<this>");
-        short[] result = UShortArray.m373constructorimpl(collection.size());
+        short[] result = UShortArray.m375constructorimpl(collection.size());
         int index = 0;
         for (UShort uShort : collection) {
-            short element = uShort.m371unboximpl();
-            UShortArray.m384set01HTLdE(result, index, element);
+            short element = uShort.m373unboximpl();
+            UShortArray.m386set01HTLdE(result, index, element);
             index++;
         }
         return result;
@@ -67,8 +67,8 @@ class UCollectionsKt___UCollectionsKt {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         int sum = 0;
         for (UInt uInt : iterable) {
-            int element = uInt.m189unboximpl();
-            sum = UInt.m138constructorimpl(sum + element);
+            int element = uInt.m191unboximpl();
+            sum = UInt.m140constructorimpl(sum + element);
         }
         return sum;
     }
@@ -77,8 +77,8 @@ class UCollectionsKt___UCollectionsKt {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         long sum = 0;
         for (ULong uLong : iterable) {
-            long element = uLong.m267unboximpl();
-            sum = ULong.m216constructorimpl(sum + element);
+            long element = uLong.m269unboximpl();
+            sum = ULong.m218constructorimpl(sum + element);
         }
         return sum;
     }
@@ -87,8 +87,8 @@ class UCollectionsKt___UCollectionsKt {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         int sum = 0;
         for (UByte uByte : iterable) {
-            byte element = uByte.m111unboximpl();
-            sum = UInt.m138constructorimpl(UInt.m138constructorimpl(element & UByte.MAX_VALUE) + sum);
+            byte element = uByte.m113unboximpl();
+            sum = UInt.m140constructorimpl(UInt.m140constructorimpl(element & UByte.MAX_VALUE) + sum);
         }
         return sum;
     }
@@ -97,8 +97,8 @@ class UCollectionsKt___UCollectionsKt {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         int sum = 0;
         for (UShort uShort : iterable) {
-            short element = uShort.m371unboximpl();
-            sum = UInt.m138constructorimpl(UInt.m138constructorimpl(65535 & element) + sum);
+            short element = uShort.m373unboximpl();
+            sum = UInt.m140constructorimpl(UInt.m140constructorimpl(65535 & element) + sum);
         }
         return sum;
     }

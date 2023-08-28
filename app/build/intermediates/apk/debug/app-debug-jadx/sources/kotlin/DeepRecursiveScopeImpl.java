@@ -102,7 +102,7 @@ final class DeepRecursiveScopeImpl<T, R> extends DeepRecursiveScope<T, R> implem
             Continuation cont = this.cont;
             if (cont != null) {
                 obj = DeepRecursiveKt.UNDEFINED_RESULT;
-                if (!Result.m46equalsimpl0(obj, r)) {
+                if (!Result.m48equalsimpl0(obj, r)) {
                     obj2 = DeepRecursiveKt.UNDEFINED_RESULT;
                     this.result = obj2;
                     cont.resumeWith(r);
@@ -114,11 +114,11 @@ final class DeepRecursiveScopeImpl<T, R> extends DeepRecursiveScope<T, R> implem
                         Object r2 = ((Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function3, 3)).invoke(this, obj3, cont);
                         if (r2 != IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
                             Result.Companion companion = Result.Companion;
-                            cont.resumeWith(Result.m44constructorimpl(r2));
+                            cont.resumeWith(Result.m46constructorimpl(r2));
                         }
                     } catch (Throwable e) {
                         Result.Companion companion2 = Result.Companion;
-                        cont.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(e)));
+                        cont.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(e)));
                     }
                 }
             } else {

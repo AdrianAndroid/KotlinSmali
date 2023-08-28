@@ -18,20 +18,20 @@ public final class TestTimeSource extends AbstractLongTimeSource {
     }
 
     /* renamed from: plusAssign-LRDsOJo  reason: not valid java name */
-    public final void m1493plusAssignLRDsOJo(long duration) {
+    public final void m1495plusAssignLRDsOJo(long duration) {
         long newReading;
-        long longDelta = Duration.m1405toLongimpl(duration, getUnit());
+        long longDelta = Duration.m1407toLongimpl(duration, getUnit());
         if (longDelta != Long.MIN_VALUE && longDelta != Long.MAX_VALUE) {
             long j = this.reading;
             newReading = j + longDelta;
             if ((j ^ longDelta) >= 0 && (j ^ newReading) < 0) {
-                m1492overflowLRDsOJo(duration);
+                m1494overflowLRDsOJo(duration);
             }
         } else {
-            double delta = Duration.m1402toDoubleimpl(duration, getUnit());
+            double delta = Duration.m1404toDoubleimpl(duration, getUnit());
             double newReading2 = this.reading + delta;
             if (newReading2 > 9.223372036854776E18d || newReading2 < -9.223372036854776E18d) {
-                m1492overflowLRDsOJo(duration);
+                m1494overflowLRDsOJo(duration);
             }
             newReading = (long) newReading2;
         }
@@ -39,7 +39,7 @@ public final class TestTimeSource extends AbstractLongTimeSource {
     }
 
     /* renamed from: overflow-LRDsOJo  reason: not valid java name */
-    private final void m1492overflowLRDsOJo(long duration) {
-        throw new IllegalStateException("TestTimeSource will overflow if its reading " + this.reading + "ns is advanced by " + ((Object) Duration.m1408toStringimpl(duration)) + '.');
+    private final void m1494overflowLRDsOJo(long duration) {
+        throw new IllegalStateException("TestTimeSource will overflow if its reading " + this.reading + "ns is advanced by " + ((Object) Duration.m1410toStringimpl(duration)) + '.');
     }
 }

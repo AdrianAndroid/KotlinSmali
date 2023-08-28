@@ -15,7 +15,7 @@ public final class MonotonicTimeSource implements TimeSource {
 
     @Override // kotlin.time.TimeSource
     public /* bridge */ /* synthetic */ TimeMark markNow() {
-        return TimeSource.Monotonic.ValueTimeMark.m1497boximpl(m1491markNowz9LOYto());
+        return TimeSource.Monotonic.ValueTimeMark.m1499boximpl(m1493markNowz9LOYto());
     }
 
     private final long read() {
@@ -27,17 +27,17 @@ public final class MonotonicTimeSource implements TimeSource {
     }
 
     /* renamed from: markNow-z9LOYto  reason: not valid java name */
-    public long m1491markNowz9LOYto() {
-        return TimeSource.Monotonic.ValueTimeMark.m1498constructorimpl(read());
+    public long m1493markNowz9LOYto() {
+        return TimeSource.Monotonic.ValueTimeMark.m1500constructorimpl(read());
     }
 
     /* renamed from: elapsedFrom-6eNON_k  reason: not valid java name */
-    public final long m1490elapsedFrom6eNON_k(long timeMark) {
+    public final long m1492elapsedFrom6eNON_k(long timeMark) {
         return LongSaturatedMathKt.saturatingDiff(read(), timeMark);
     }
 
     /* renamed from: adjustReading-6QKq23U  reason: not valid java name */
-    public final long m1489adjustReading6QKq23U(long timeMark, long duration) {
-        return TimeSource.Monotonic.ValueTimeMark.m1498constructorimpl(LongSaturatedMathKt.m1487saturatingAddpTJri5U(timeMark, duration));
+    public final long m1491adjustReading6QKq23U(long timeMark, long duration) {
+        return TimeSource.Monotonic.ValueTimeMark.m1500constructorimpl(LongSaturatedMathKt.m1489saturatingAddpTJri5U(timeMark, duration));
     }
 }

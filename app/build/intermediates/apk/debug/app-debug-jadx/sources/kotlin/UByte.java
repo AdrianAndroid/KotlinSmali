@@ -17,22 +17,22 @@ public final class UByte implements Comparable<UByte> {
     private final byte data;
 
     /* renamed from: box-impl */
-    public static final /* synthetic */ UByte m56boximpl(byte b) {
+    public static final /* synthetic */ UByte m58boximpl(byte b) {
         return new UByte(b);
     }
 
     /* renamed from: constructor-impl */
-    public static byte m62constructorimpl(byte b) {
+    public static byte m64constructorimpl(byte b) {
         return b;
     }
 
     /* renamed from: equals-impl */
-    public static boolean m68equalsimpl(byte b, Object obj) {
-        return (obj instanceof UByte) && b == ((UByte) obj).m111unboximpl();
+    public static boolean m70equalsimpl(byte b, Object obj) {
+        return (obj instanceof UByte) && b == ((UByte) obj).m113unboximpl();
     }
 
     /* renamed from: equals-impl0 */
-    public static final boolean m69equalsimpl0(byte b, byte b2) {
+    public static final boolean m71equalsimpl0(byte b, byte b2) {
         return b == b2;
     }
 
@@ -40,26 +40,26 @@ public final class UByte implements Comparable<UByte> {
     }
 
     /* renamed from: hashCode-impl */
-    public static int m74hashCodeimpl(byte b) {
+    public static int m76hashCodeimpl(byte b) {
         return b;
     }
 
     public boolean equals(Object obj) {
-        return m68equalsimpl(this.data, obj);
+        return m70equalsimpl(this.data, obj);
     }
 
     public int hashCode() {
-        return m74hashCodeimpl(this.data);
+        return m76hashCodeimpl(this.data);
     }
 
     /* renamed from: unbox-impl */
-    public final /* synthetic */ byte m111unboximpl() {
+    public final /* synthetic */ byte m113unboximpl() {
         return this.data;
     }
 
     @Override // java.lang.Comparable
     public /* bridge */ /* synthetic */ int compareTo(UByte uByte) {
-        return Intrinsics.compare(m111unboximpl() & MAX_VALUE, uByte.m111unboximpl() & MAX_VALUE);
+        return Intrinsics.compare(m113unboximpl() & MAX_VALUE, uByte.m113unboximpl() & MAX_VALUE);
     }
 
     private /* synthetic */ UByte(byte data) {
@@ -79,261 +79,261 @@ public final class UByte implements Comparable<UByte> {
     }
 
     /* renamed from: compareTo-7apg3OU */
-    private int m57compareTo7apg3OU(byte other) {
-        return Intrinsics.compare(m111unboximpl() & MAX_VALUE, other & MAX_VALUE);
+    private int m59compareTo7apg3OU(byte other) {
+        return Intrinsics.compare(m113unboximpl() & MAX_VALUE, other & MAX_VALUE);
     }
 
     /* renamed from: compareTo-7apg3OU */
-    private static int m58compareTo7apg3OU(byte arg0, byte other) {
+    private static int m60compareTo7apg3OU(byte arg0, byte other) {
         return Intrinsics.compare(arg0 & MAX_VALUE, other & MAX_VALUE);
     }
 
     /* renamed from: compareTo-xj2QHRw */
-    private static final int m61compareToxj2QHRw(byte arg0, short other) {
+    private static final int m63compareToxj2QHRw(byte arg0, short other) {
         return Intrinsics.compare(arg0 & MAX_VALUE, 65535 & other);
     }
 
     /* renamed from: compareTo-WZ4Q5Ns */
-    private static final int m60compareToWZ4Q5Ns(byte arg0, int other) {
-        return UnsignedKt.uintCompare(UInt.m138constructorimpl(arg0 & MAX_VALUE), other);
+    private static final int m62compareToWZ4Q5Ns(byte arg0, int other) {
+        return UnsignedKt.uintCompare(UInt.m140constructorimpl(arg0 & MAX_VALUE), other);
     }
 
     /* renamed from: compareTo-VKZWuLQ */
-    private static final int m59compareToVKZWuLQ(byte arg0, long other) {
-        return UnsignedKt.ulongCompare(ULong.m216constructorimpl(arg0 & 255), other);
+    private static final int m61compareToVKZWuLQ(byte arg0, long other) {
+        return UnsignedKt.ulongCompare(ULong.m218constructorimpl(arg0 & 255), other);
     }
 
     /* renamed from: plus-7apg3OU */
-    private static final int m86plus7apg3OU(byte arg0, byte other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) + UInt.m138constructorimpl(other & MAX_VALUE));
+    private static final int m88plus7apg3OU(byte arg0, byte other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) + UInt.m140constructorimpl(other & MAX_VALUE));
     }
 
     /* renamed from: plus-xj2QHRw */
-    private static final int m89plusxj2QHRw(byte arg0, short other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) + UInt.m138constructorimpl(65535 & other));
+    private static final int m91plusxj2QHRw(byte arg0, short other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) + UInt.m140constructorimpl(65535 & other));
     }
 
     /* renamed from: plus-WZ4Q5Ns */
-    private static final int m88plusWZ4Q5Ns(byte arg0, int other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) + other);
+    private static final int m90plusWZ4Q5Ns(byte arg0, int other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) + other);
     }
 
     /* renamed from: plus-VKZWuLQ */
-    private static final long m87plusVKZWuLQ(byte arg0, long other) {
-        return ULong.m216constructorimpl(ULong.m216constructorimpl(arg0 & 255) + other);
+    private static final long m89plusVKZWuLQ(byte arg0, long other) {
+        return ULong.m218constructorimpl(ULong.m218constructorimpl(arg0 & 255) + other);
     }
 
     /* renamed from: minus-7apg3OU */
-    private static final int m77minus7apg3OU(byte arg0, byte other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) - UInt.m138constructorimpl(other & MAX_VALUE));
+    private static final int m79minus7apg3OU(byte arg0, byte other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) - UInt.m140constructorimpl(other & MAX_VALUE));
     }
 
     /* renamed from: minus-xj2QHRw */
-    private static final int m80minusxj2QHRw(byte arg0, short other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) - UInt.m138constructorimpl(65535 & other));
+    private static final int m82minusxj2QHRw(byte arg0, short other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) - UInt.m140constructorimpl(65535 & other));
     }
 
     /* renamed from: minus-WZ4Q5Ns */
-    private static final int m79minusWZ4Q5Ns(byte arg0, int other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) - other);
+    private static final int m81minusWZ4Q5Ns(byte arg0, int other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) - other);
     }
 
     /* renamed from: minus-VKZWuLQ */
-    private static final long m78minusVKZWuLQ(byte arg0, long other) {
-        return ULong.m216constructorimpl(ULong.m216constructorimpl(arg0 & 255) - other);
+    private static final long m80minusVKZWuLQ(byte arg0, long other) {
+        return ULong.m218constructorimpl(ULong.m218constructorimpl(arg0 & 255) - other);
     }
 
     /* renamed from: times-7apg3OU */
-    private static final int m95times7apg3OU(byte arg0, byte other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) * UInt.m138constructorimpl(other & MAX_VALUE));
+    private static final int m97times7apg3OU(byte arg0, byte other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) * UInt.m140constructorimpl(other & MAX_VALUE));
     }
 
     /* renamed from: times-xj2QHRw */
-    private static final int m98timesxj2QHRw(byte arg0, short other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) * UInt.m138constructorimpl(65535 & other));
+    private static final int m100timesxj2QHRw(byte arg0, short other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) * UInt.m140constructorimpl(65535 & other));
     }
 
     /* renamed from: times-WZ4Q5Ns */
-    private static final int m97timesWZ4Q5Ns(byte arg0, int other) {
-        return UInt.m138constructorimpl(UInt.m138constructorimpl(arg0 & MAX_VALUE) * other);
+    private static final int m99timesWZ4Q5Ns(byte arg0, int other) {
+        return UInt.m140constructorimpl(UInt.m140constructorimpl(arg0 & MAX_VALUE) * other);
     }
 
     /* renamed from: times-VKZWuLQ */
-    private static final long m96timesVKZWuLQ(byte arg0, long other) {
-        return ULong.m216constructorimpl(ULong.m216constructorimpl(arg0 & 255) * other);
+    private static final long m98timesVKZWuLQ(byte arg0, long other) {
+        return ULong.m218constructorimpl(ULong.m218constructorimpl(arg0 & 255) * other);
     }
 
     /* renamed from: div-7apg3OU */
-    private static final int m64div7apg3OU(byte arg0, byte other) {
-        return UnsignedKt.m391uintDivideJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(other & MAX_VALUE));
+    private static final int m66div7apg3OU(byte arg0, byte other) {
+        return UnsignedKt.m393uintDivideJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(other & MAX_VALUE));
     }
 
     /* renamed from: div-xj2QHRw */
-    private static final int m67divxj2QHRw(byte arg0, short other) {
-        return UnsignedKt.m391uintDivideJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(65535 & other));
+    private static final int m69divxj2QHRw(byte arg0, short other) {
+        return UnsignedKt.m393uintDivideJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(65535 & other));
     }
 
     /* renamed from: div-WZ4Q5Ns */
-    private static final int m66divWZ4Q5Ns(byte arg0, int other) {
-        return UnsignedKt.m391uintDivideJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), other);
+    private static final int m68divWZ4Q5Ns(byte arg0, int other) {
+        return UnsignedKt.m393uintDivideJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), other);
     }
 
     /* renamed from: div-VKZWuLQ */
-    private static final long m65divVKZWuLQ(byte arg0, long other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(ULong.m216constructorimpl(arg0 & 255), other);
+    private static final long m67divVKZWuLQ(byte arg0, long other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(ULong.m218constructorimpl(arg0 & 255), other);
     }
 
     /* renamed from: rem-7apg3OU */
-    private static final int m91rem7apg3OU(byte arg0, byte other) {
-        return UnsignedKt.m392uintRemainderJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(other & MAX_VALUE));
+    private static final int m93rem7apg3OU(byte arg0, byte other) {
+        return UnsignedKt.m394uintRemainderJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(other & MAX_VALUE));
     }
 
     /* renamed from: rem-xj2QHRw */
-    private static final int m94remxj2QHRw(byte arg0, short other) {
-        return UnsignedKt.m392uintRemainderJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(65535 & other));
+    private static final int m96remxj2QHRw(byte arg0, short other) {
+        return UnsignedKt.m394uintRemainderJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(65535 & other));
     }
 
     /* renamed from: rem-WZ4Q5Ns */
-    private static final int m93remWZ4Q5Ns(byte arg0, int other) {
-        return UnsignedKt.m392uintRemainderJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), other);
+    private static final int m95remWZ4Q5Ns(byte arg0, int other) {
+        return UnsignedKt.m394uintRemainderJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), other);
     }
 
     /* renamed from: rem-VKZWuLQ */
-    private static final long m92remVKZWuLQ(byte arg0, long other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(ULong.m216constructorimpl(arg0 & 255), other);
+    private static final long m94remVKZWuLQ(byte arg0, long other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(ULong.m218constructorimpl(arg0 & 255), other);
     }
 
     /* renamed from: floorDiv-7apg3OU */
-    private static final int m70floorDiv7apg3OU(byte arg0, byte other) {
-        return UnsignedKt.m391uintDivideJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(other & MAX_VALUE));
+    private static final int m72floorDiv7apg3OU(byte arg0, byte other) {
+        return UnsignedKt.m393uintDivideJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(other & MAX_VALUE));
     }
 
     /* renamed from: floorDiv-xj2QHRw */
-    private static final int m73floorDivxj2QHRw(byte arg0, short other) {
-        return UnsignedKt.m391uintDivideJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(65535 & other));
+    private static final int m75floorDivxj2QHRw(byte arg0, short other) {
+        return UnsignedKt.m393uintDivideJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(65535 & other));
     }
 
     /* renamed from: floorDiv-WZ4Q5Ns */
-    private static final int m72floorDivWZ4Q5Ns(byte arg0, int other) {
-        return UnsignedKt.m391uintDivideJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), other);
+    private static final int m74floorDivWZ4Q5Ns(byte arg0, int other) {
+        return UnsignedKt.m393uintDivideJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), other);
     }
 
     /* renamed from: floorDiv-VKZWuLQ */
-    private static final long m71floorDivVKZWuLQ(byte arg0, long other) {
-        return UnsignedKt.m393ulongDivideeb3DHEI(ULong.m216constructorimpl(arg0 & 255), other);
+    private static final long m73floorDivVKZWuLQ(byte arg0, long other) {
+        return UnsignedKt.m395ulongDivideeb3DHEI(ULong.m218constructorimpl(arg0 & 255), other);
     }
 
     /* renamed from: mod-7apg3OU */
-    private static final byte m81mod7apg3OU(byte arg0, byte other) {
-        return m62constructorimpl((byte) UnsignedKt.m392uintRemainderJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(other & MAX_VALUE)));
+    private static final byte m83mod7apg3OU(byte arg0, byte other) {
+        return m64constructorimpl((byte) UnsignedKt.m394uintRemainderJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(other & MAX_VALUE)));
     }
 
     /* renamed from: mod-xj2QHRw */
-    private static final short m84modxj2QHRw(byte arg0, short other) {
-        return UShort.m322constructorimpl((short) UnsignedKt.m392uintRemainderJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(65535 & other)));
+    private static final short m86modxj2QHRw(byte arg0, short other) {
+        return UShort.m324constructorimpl((short) UnsignedKt.m394uintRemainderJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(65535 & other)));
     }
 
     /* renamed from: mod-WZ4Q5Ns */
-    private static final int m83modWZ4Q5Ns(byte arg0, int other) {
-        return UnsignedKt.m392uintRemainderJ1ME1BU(UInt.m138constructorimpl(arg0 & MAX_VALUE), other);
+    private static final int m85modWZ4Q5Ns(byte arg0, int other) {
+        return UnsignedKt.m394uintRemainderJ1ME1BU(UInt.m140constructorimpl(arg0 & MAX_VALUE), other);
     }
 
     /* renamed from: mod-VKZWuLQ */
-    private static final long m82modVKZWuLQ(byte arg0, long other) {
-        return UnsignedKt.m394ulongRemaindereb3DHEI(ULong.m216constructorimpl(arg0 & 255), other);
+    private static final long m84modVKZWuLQ(byte arg0, long other) {
+        return UnsignedKt.m396ulongRemaindereb3DHEI(ULong.m218constructorimpl(arg0 & 255), other);
     }
 
     /* renamed from: inc-w2LRezQ */
-    private static final byte m75incw2LRezQ(byte arg0) {
-        return m62constructorimpl((byte) (arg0 + 1));
+    private static final byte m77incw2LRezQ(byte arg0) {
+        return m64constructorimpl((byte) (arg0 + 1));
     }
 
     /* renamed from: dec-w2LRezQ */
-    private static final byte m63decw2LRezQ(byte arg0) {
-        return m62constructorimpl((byte) (arg0 - 1));
+    private static final byte m65decw2LRezQ(byte arg0) {
+        return m64constructorimpl((byte) (arg0 - 1));
     }
 
     /* renamed from: rangeTo-7apg3OU */
-    private static final UIntRange m90rangeTo7apg3OU(byte arg0, byte other) {
-        return new UIntRange(UInt.m138constructorimpl(arg0 & MAX_VALUE), UInt.m138constructorimpl(other & MAX_VALUE), null);
+    private static final UIntRange m92rangeTo7apg3OU(byte arg0, byte other) {
+        return new UIntRange(UInt.m140constructorimpl(arg0 & MAX_VALUE), UInt.m140constructorimpl(other & MAX_VALUE), null);
     }
 
     /* renamed from: and-7apg3OU */
-    private static final byte m55and7apg3OU(byte arg0, byte other) {
-        return m62constructorimpl((byte) (arg0 & other));
+    private static final byte m57and7apg3OU(byte arg0, byte other) {
+        return m64constructorimpl((byte) (arg0 & other));
     }
 
     /* renamed from: or-7apg3OU */
-    private static final byte m85or7apg3OU(byte arg0, byte other) {
-        return m62constructorimpl((byte) (arg0 | other));
+    private static final byte m87or7apg3OU(byte arg0, byte other) {
+        return m64constructorimpl((byte) (arg0 | other));
     }
 
     /* renamed from: xor-7apg3OU */
-    private static final byte m110xor7apg3OU(byte arg0, byte other) {
-        return m62constructorimpl((byte) (arg0 ^ other));
+    private static final byte m112xor7apg3OU(byte arg0, byte other) {
+        return m64constructorimpl((byte) (arg0 ^ other));
     }
 
     /* renamed from: inv-w2LRezQ */
-    private static final byte m76invw2LRezQ(byte arg0) {
-        return m62constructorimpl((byte) (~arg0));
+    private static final byte m78invw2LRezQ(byte arg0) {
+        return m64constructorimpl((byte) (~arg0));
     }
 
     /* renamed from: toByte-impl */
-    private static final byte m99toByteimpl(byte arg0) {
+    private static final byte m101toByteimpl(byte arg0) {
         return arg0;
     }
 
     /* renamed from: toShort-impl */
-    private static final short m104toShortimpl(byte arg0) {
+    private static final short m106toShortimpl(byte arg0) {
         return (short) (arg0 & 255);
     }
 
     /* renamed from: toInt-impl */
-    private static final int m102toIntimpl(byte arg0) {
+    private static final int m104toIntimpl(byte arg0) {
         return arg0 & MAX_VALUE;
     }
 
     /* renamed from: toLong-impl */
-    private static final long m103toLongimpl(byte arg0) {
+    private static final long m105toLongimpl(byte arg0) {
         return arg0 & 255;
     }
 
     /* renamed from: toUByte-w2LRezQ */
-    private static final byte m106toUBytew2LRezQ(byte arg0) {
+    private static final byte m108toUBytew2LRezQ(byte arg0) {
         return arg0;
     }
 
     /* renamed from: toUShort-Mh2AYeg */
-    private static final short m109toUShortMh2AYeg(byte arg0) {
-        return UShort.m322constructorimpl((short) (arg0 & 255));
+    private static final short m111toUShortMh2AYeg(byte arg0) {
+        return UShort.m324constructorimpl((short) (arg0 & 255));
     }
 
     /* renamed from: toUInt-pVg5ArA */
-    private static final int m107toUIntpVg5ArA(byte arg0) {
-        return UInt.m138constructorimpl(arg0 & MAX_VALUE);
+    private static final int m109toUIntpVg5ArA(byte arg0) {
+        return UInt.m140constructorimpl(arg0 & MAX_VALUE);
     }
 
     /* renamed from: toULong-s-VKNKU */
-    private static final long m108toULongsVKNKU(byte arg0) {
-        return ULong.m216constructorimpl(arg0 & 255);
+    private static final long m110toULongsVKNKU(byte arg0) {
+        return ULong.m218constructorimpl(arg0 & 255);
     }
 
     /* renamed from: toFloat-impl */
-    private static final float m101toFloatimpl(byte arg0) {
+    private static final float m103toFloatimpl(byte arg0) {
         return arg0 & MAX_VALUE;
     }
 
     /* renamed from: toDouble-impl */
-    private static final double m100toDoubleimpl(byte arg0) {
+    private static final double m102toDoubleimpl(byte arg0) {
         return arg0 & MAX_VALUE;
     }
 
     /* renamed from: toString-impl */
-    public static String m105toStringimpl(byte arg0) {
+    public static String m107toStringimpl(byte arg0) {
         return String.valueOf(arg0 & MAX_VALUE);
     }
 
     public String toString() {
-        return m105toStringimpl(this.data);
+        return m107toStringimpl(this.data);
     }
 }

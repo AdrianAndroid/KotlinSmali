@@ -11,7 +11,7 @@ public final class SynchronizedKt {
     }
 
     /* renamed from: synchronized  reason: not valid java name */
-    public static final <T> T m1592synchronized(Object lock, Function0<? extends T> function0) {
+    public static final <T> T m1594synchronized(Object lock, Function0<? extends T> function0) {
         T invoke;
         synchronized (lock) {
             try {

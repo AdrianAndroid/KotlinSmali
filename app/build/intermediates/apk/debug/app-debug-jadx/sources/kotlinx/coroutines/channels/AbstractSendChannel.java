@@ -212,16 +212,16 @@ public abstract class AbstractSendChannel<E> implements SendChannel<E> {
 
     @Override // kotlinx.coroutines.channels.SendChannel
     /* renamed from: trySend-JP2dKIU  reason: not valid java name */
-    public final Object mo1535trySendJP2dKIU(E e) {
+    public final Object mo1537trySendJP2dKIU(E e) {
         Object result = offerInternal(e);
         if (result == AbstractChannelKt.OFFER_SUCCESS) {
-            return ChannelResult.Companion.m1555successJP2dKIU(Unit.INSTANCE);
+            return ChannelResult.Companion.m1557successJP2dKIU(Unit.INSTANCE);
         }
         if (result == AbstractChannelKt.OFFER_FAILED) {
             Closed closedForSend = getClosedForSend();
-            return closedForSend == null ? ChannelResult.Companion.m1554failurePtdJZtk() : ChannelResult.Companion.m1553closedJP2dKIU(helpCloseAndGetSendException(closedForSend));
+            return closedForSend == null ? ChannelResult.Companion.m1556failurePtdJZtk() : ChannelResult.Companion.m1555closedJP2dKIU(helpCloseAndGetSendException(closedForSend));
         } else if (result instanceof Closed) {
-            return ChannelResult.Companion.m1553closedJP2dKIU(helpCloseAndGetSendException((Closed) result));
+            return ChannelResult.Companion.m1555closedJP2dKIU(helpCloseAndGetSendException((Closed) result));
         } else {
             throw new IllegalStateException(Intrinsics.stringPlus("trySend returned ", result).toString());
         }
@@ -269,7 +269,7 @@ public abstract class AbstractSendChannel<E> implements SendChannel<E> {
             Object offerResult = offerInternal(e);
             if (offerResult == AbstractChannelKt.OFFER_SUCCESS) {
                 Result.Companion companion = Result.Companion;
-                cont.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+                cont.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
                 break;
             } else if (offerResult != AbstractChannelKt.OFFER_FAILED) {
                 if (offerResult instanceof Closed) {
@@ -295,11 +295,11 @@ public abstract class AbstractSendChannel<E> implements SendChannel<E> {
         if (function1 != null && (it = OnUndeliveredElementKt.callUndeliveredElementCatchingException$default(function1, e, null, 2, null)) != null) {
             ExceptionsKt.addSuppressed(it, sendException);
             Result.Companion companion = Result.Companion;
-            continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(it)));
+            continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(it)));
             return;
         }
         Result.Companion companion2 = Result.Companion;
-        continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(sendException)));
+        continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(sendException)));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -431,16 +431,16 @@ public abstract class AbstractSendChannel<E> implements SendChannel<E> {
     }
 
     private final void helpClose(Closed<?> closed) {
-        Object closedList = InlineList.m1572constructorimpl$default(null, 1, null);
+        Object closedList = InlineList.m1574constructorimpl$default(null, 1, null);
         while (true) {
             LockFreeLinkedListNode prevNode = closed.getPrevNode();
             Receive previous = prevNode instanceof Receive ? (Receive) prevNode : null;
             if (previous == null) {
                 break;
-            } else if (!previous.mo1580remove()) {
+            } else if (!previous.mo1582remove()) {
                 previous.helpRemove();
             } else {
-                closedList = InlineList.m1577plusFjFbRPM(closedList, previous);
+                closedList = InlineList.m1579plusFjFbRPM(closedList, previous);
             }
         }
         if (closedList != null) {
@@ -666,7 +666,7 @@ public abstract class AbstractSendChannel<E> implements SendChannel<E> {
 
         @Override // kotlinx.coroutines.DisposableHandle
         public void dispose() {
-            if (mo1580remove()) {
+            if (mo1582remove()) {
                 undeliveredElement();
             }
         }

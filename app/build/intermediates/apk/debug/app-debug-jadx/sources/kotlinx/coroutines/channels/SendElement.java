@@ -53,7 +53,7 @@ public class SendElement<E> extends Send {
     @Override // kotlinx.coroutines.channels.Send
     public void resumeSendClosed(Closed<?> closed) {
         Result.Companion companion = Result.Companion;
-        this.cont.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(closed.getSendException())));
+        this.cont.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(closed.getSendException())));
     }
 
     @Override // kotlinx.coroutines.internal.LockFreeLinkedListNode

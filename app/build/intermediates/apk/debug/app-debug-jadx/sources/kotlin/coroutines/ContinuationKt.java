@@ -21,14 +21,14 @@ public final class ContinuationKt {
     private static final <T> void resume(Continuation<? super T> continuation, T t) {
         Intrinsics.checkNotNullParameter(continuation, "<this>");
         Result.Companion companion = Result.Companion;
-        continuation.resumeWith(Result.m44constructorimpl(t));
+        continuation.resumeWith(Result.m46constructorimpl(t));
     }
 
     private static final <T> void resumeWithException(Continuation<? super T> continuation, Throwable exception) {
         Intrinsics.checkNotNullParameter(continuation, "<this>");
         Intrinsics.checkNotNullParameter(exception, "exception");
         Result.Companion companion = Result.Companion;
-        continuation.resumeWith(Result.m44constructorimpl(ResultKt.createFailure(exception)));
+        continuation.resumeWith(Result.m46constructorimpl(ResultKt.createFailure(exception)));
     }
 
     private static final <T> Continuation<T> Continuation(final CoroutineContext context, final Function1<? super Result<? extends T>, Unit> resumeWith) {
@@ -42,7 +42,7 @@ public final class ContinuationKt {
 
             @Override // kotlin.coroutines.Continuation
             public void resumeWith(Object result) {
-                resumeWith.invoke(Result.m43boximpl(result));
+                resumeWith.invoke(Result.m45boximpl(result));
             }
         };
     }
@@ -64,7 +64,7 @@ public final class ContinuationKt {
         Intrinsics.checkNotNullParameter(completion, "completion");
         Continuation intercepted = IntrinsicsKt.intercepted(IntrinsicsKt.createCoroutineUnintercepted(function1, completion));
         Result.Companion companion = Result.Companion;
-        intercepted.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+        intercepted.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
     }
 
     public static final <R, T> void startCoroutine(Function2<? super R, ? super Continuation<? super T>, ? extends Object> function2, R r, Continuation<? super T> completion) {
@@ -72,7 +72,7 @@ public final class ContinuationKt {
         Intrinsics.checkNotNullParameter(completion, "completion");
         Continuation intercepted = IntrinsicsKt.intercepted(IntrinsicsKt.createCoroutineUnintercepted(function2, r, completion));
         Result.Companion companion = Result.Companion;
-        intercepted.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+        intercepted.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
     }
 
     private static final <T> Object suspendCoroutine(Function1<? super Continuation<? super T>, Unit> function1, Continuation<? super T> continuation) {

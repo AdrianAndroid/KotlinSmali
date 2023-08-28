@@ -20,7 +20,7 @@ public final class CompletionStateKt {
     }
 
     public static final <T> Object toState(Object $this$toState, Function1<? super Throwable, Unit> function1) {
-        Throwable it = Result.m47exceptionOrNullimpl($this$toState);
+        Throwable it = Result.m49exceptionOrNullimpl($this$toState);
         if (it == null) {
             return function1 != null ? new CompletedWithCancellation($this$toState, function1) : $this$toState;
         }
@@ -29,7 +29,7 @@ public final class CompletionStateKt {
 
     public static final <T> Object toState(Object $this$toState, CancellableContinuation<?> cancellableContinuation) {
         Throwable th;
-        Throwable it = Result.m47exceptionOrNullimpl($this$toState);
+        Throwable it = Result.m49exceptionOrNullimpl($this$toState);
         if (it == null) {
             return $this$toState;
         }
@@ -48,9 +48,9 @@ public final class CompletionStateKt {
             if (DebugKt.getRECOVER_STACK_TRACES() && (continuation instanceof CoroutineStackFrame)) {
                 exception$iv = StackTraceRecoveryKt.recoverFromStackFrame(exception$iv, (CoroutineStackFrame) continuation);
             }
-            return Result.m44constructorimpl(ResultKt.createFailure(exception$iv));
+            return Result.m46constructorimpl(ResultKt.createFailure(exception$iv));
         }
         Result.Companion companion2 = Result.Companion;
-        return Result.m44constructorimpl(state);
+        return Result.m46constructorimpl(state);
     }
 }

@@ -55,8 +55,8 @@ class BroadcastCoroutine<E> extends AbstractCoroutine<Unit> implements ProducerS
 
     @Override // kotlinx.coroutines.channels.SendChannel
     /* renamed from: trySend-JP2dKIU */
-    public Object mo1535trySendJP2dKIU(E e) {
-        return this._channel.mo1535trySendJP2dKIU(e);
+    public Object mo1537trySendJP2dKIU(E e) {
+        return this._channel.mo1537trySendJP2dKIU(e);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

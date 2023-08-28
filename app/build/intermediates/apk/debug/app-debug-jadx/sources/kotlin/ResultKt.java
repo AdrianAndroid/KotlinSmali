@@ -23,10 +23,10 @@ public final class ResultKt {
         Intrinsics.checkNotNullParameter(block, "block");
         try {
             Result.Companion companion = Result.Companion;
-            return Result.m44constructorimpl(block.invoke());
+            return Result.m46constructorimpl(block.invoke());
         } catch (Throwable e) {
             Result.Companion companion2 = Result.Companion;
-            return Result.m44constructorimpl(createFailure(e));
+            return Result.m46constructorimpl(createFailure(e));
         }
     }
 
@@ -34,10 +34,10 @@ public final class ResultKt {
         Intrinsics.checkNotNullParameter(block, "block");
         try {
             Result.Companion companion = Result.Companion;
-            return Result.m44constructorimpl(block.invoke(t));
+            return Result.m46constructorimpl(block.invoke(t));
         } catch (Throwable e) {
             Result.Companion companion2 = Result.Companion;
-            return Result.m44constructorimpl(createFailure(e));
+            return Result.m46constructorimpl(createFailure(e));
         }
     }
 
@@ -50,75 +50,75 @@ public final class ResultKt {
     /* JADX WARN: Multi-variable type inference failed */
     private static final <R, T extends R> R getOrElse(Object $this$getOrElse, Function1<? super Throwable, ? extends R> onFailure) {
         Intrinsics.checkNotNullParameter(onFailure, "onFailure");
-        Throwable exception = Result.m47exceptionOrNullimpl($this$getOrElse);
+        Throwable exception = Result.m49exceptionOrNullimpl($this$getOrElse);
         return exception == null ? $this$getOrElse : onFailure.invoke(exception);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     private static final <R, T extends R> R getOrDefault(Object $this$getOrDefault, R r) {
-        return Result.m50isFailureimpl($this$getOrDefault) ? r : $this$getOrDefault;
+        return Result.m52isFailureimpl($this$getOrDefault) ? r : $this$getOrDefault;
     }
 
     private static final <R, T> R fold(Object $this$fold, Function1<? super T, ? extends R> onSuccess, Function1<? super Throwable, ? extends R> onFailure) {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onFailure, "onFailure");
-        Throwable exception = Result.m47exceptionOrNullimpl($this$fold);
+        Throwable exception = Result.m49exceptionOrNullimpl($this$fold);
         return exception == null ? onSuccess.invoke($this$fold) : onFailure.invoke(exception);
     }
 
     private static final <R, T> Object map(Object $this$map, Function1<? super T, ? extends R> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
-        if (Result.m51isSuccessimpl($this$map)) {
+        if (Result.m53isSuccessimpl($this$map)) {
             Result.Companion companion = Result.Companion;
-            return Result.m44constructorimpl(transform.invoke($this$map));
+            return Result.m46constructorimpl(transform.invoke($this$map));
         }
-        return Result.m44constructorimpl($this$map);
+        return Result.m46constructorimpl($this$map);
     }
 
     private static final <R, T> Object mapCatching(Object $this$mapCatching, Function1<? super T, ? extends R> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
-        if (Result.m51isSuccessimpl($this$mapCatching)) {
+        if (Result.m53isSuccessimpl($this$mapCatching)) {
             try {
                 Result.Companion companion = Result.Companion;
-                Object $this$mapCatching_u24lambda_u2d3 = Result.m44constructorimpl(transform.invoke($this$mapCatching));
+                Object $this$mapCatching_u24lambda_u2d3 = Result.m46constructorimpl(transform.invoke($this$mapCatching));
                 return $this$mapCatching_u24lambda_u2d3;
             } catch (Throwable th) {
                 Result.Companion companion2 = Result.Companion;
-                return Result.m44constructorimpl(createFailure(th));
+                return Result.m46constructorimpl(createFailure(th));
             }
         }
-        return Result.m44constructorimpl($this$mapCatching);
+        return Result.m46constructorimpl($this$mapCatching);
     }
 
     private static final <R, T extends R> Object recover(Object $this$recover, Function1<? super Throwable, ? extends R> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
-        Throwable exception = Result.m47exceptionOrNullimpl($this$recover);
+        Throwable exception = Result.m49exceptionOrNullimpl($this$recover);
         if (exception == null) {
             return $this$recover;
         }
         Result.Companion companion = Result.Companion;
-        return Result.m44constructorimpl(transform.invoke(exception));
+        return Result.m46constructorimpl(transform.invoke(exception));
     }
 
     private static final <R, T extends R> Object recoverCatching(Object $this$recoverCatching, Function1<? super Throwable, ? extends R> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
-        Throwable exception = Result.m47exceptionOrNullimpl($this$recoverCatching);
+        Throwable exception = Result.m49exceptionOrNullimpl($this$recoverCatching);
         if (exception == null) {
             return $this$recoverCatching;
         }
         try {
             Result.Companion companion = Result.Companion;
-            Object $this$recoverCatching_u24lambda_u2d5 = Result.m44constructorimpl(transform.invoke(exception));
+            Object $this$recoverCatching_u24lambda_u2d5 = Result.m46constructorimpl(transform.invoke(exception));
             return $this$recoverCatching_u24lambda_u2d5;
         } catch (Throwable th) {
             Result.Companion companion2 = Result.Companion;
-            return Result.m44constructorimpl(createFailure(th));
+            return Result.m46constructorimpl(createFailure(th));
         }
     }
 
     private static final <T> Object onFailure(Object $this$onFailure, Function1<? super Throwable, Unit> action) {
         Intrinsics.checkNotNullParameter(action, "action");
-        Throwable it = Result.m47exceptionOrNullimpl($this$onFailure);
+        Throwable it = Result.m49exceptionOrNullimpl($this$onFailure);
         if (it != null) {
             action.invoke(it);
         }
@@ -127,7 +127,7 @@ public final class ResultKt {
 
     private static final <T> Object onSuccess(Object $this$onSuccess, Function1<? super T, Unit> action) {
         Intrinsics.checkNotNullParameter(action, "action");
-        if (Result.m51isSuccessimpl($this$onSuccess)) {
+        if (Result.m53isSuccessimpl($this$onSuccess)) {
             action.invoke($this$onSuccess);
         }
         return $this$onSuccess;

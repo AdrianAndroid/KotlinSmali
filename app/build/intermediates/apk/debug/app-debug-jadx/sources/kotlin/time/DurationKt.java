@@ -248,13 +248,13 @@ public final class DurationKt {
     }
 
     /* renamed from: times-mvk6XK0 */
-    private static final long m1485timesmvk6XK0(int $this$times_u2dmvk6XK0, long duration) {
-        return Duration.m1397timesUwyO8pc(duration, $this$times_u2dmvk6XK0);
+    private static final long m1487timesmvk6XK0(int $this$times_u2dmvk6XK0, long duration) {
+        return Duration.m1399timesUwyO8pc(duration, $this$times_u2dmvk6XK0);
     }
 
     /* renamed from: times-kIfJnKk */
-    private static final long m1484timeskIfJnKk(double $this$times_u2dkIfJnKk, long duration) {
-        return Duration.m1396timesUwyO8pc(duration, $this$times_u2dkIfJnKk);
+    private static final long m1486timeskIfJnKk(double $this$times_u2dkIfJnKk, long duration) {
+        return Duration.m1398timesUwyO8pc(duration, $this$times_u2dkIfJnKk);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:253:0x00c4 A[LOOP:1: B:242:0x0085->B:253:0x00c4, LOOP_END] */
@@ -332,15 +332,15 @@ public final class DurationKt {
     }
 
     public static final long durationOfNanos(long normalNanos) {
-        return Duration.m1359constructorimpl(normalNanos << 1);
+        return Duration.m1361constructorimpl(normalNanos << 1);
     }
 
     public static final long durationOfMillis(long normalMillis) {
-        return Duration.m1359constructorimpl((normalMillis << 1) + 1);
+        return Duration.m1361constructorimpl((normalMillis << 1) + 1);
     }
 
     public static final long durationOf(long normalValue, int unitDiscriminator) {
-        return Duration.m1359constructorimpl((normalValue << 1) + unitDiscriminator);
+        return Duration.m1361constructorimpl((normalValue << 1) + unitDiscriminator);
     }
 
     public static final long durationOfNanosNormalized(long nanos) {

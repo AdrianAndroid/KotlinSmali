@@ -170,7 +170,7 @@ public final class AwaitAll<T> {
                     i++;
                     destination$iv$iv.add(deferred.getCompleted());
                 }
-                cancellableContinuation.resumeWith(Result.m44constructorimpl((List) destination$iv$iv));
+                cancellableContinuation.resumeWith(Result.m46constructorimpl((List) destination$iv$iv));
             }
         }
     }

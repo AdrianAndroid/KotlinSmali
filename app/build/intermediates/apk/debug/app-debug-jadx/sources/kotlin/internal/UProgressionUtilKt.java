@@ -9,46 +9,46 @@ import kotlin.UnsignedKt;
 /* loaded from: classes.dex */
 public final class UProgressionUtilKt {
     /* renamed from: differenceModulo-WZ9TVnA  reason: not valid java name */
-    private static final int m1256differenceModuloWZ9TVnA(int a, int b, int c) {
-        int ac = UnsignedKt.m392uintRemainderJ1ME1BU(a, c);
-        int bc = UnsignedKt.m392uintRemainderJ1ME1BU(b, c);
-        return UInt.m138constructorimpl(UnsignedKt.uintCompare(ac, bc) >= 0 ? ac - bc : UInt.m138constructorimpl(ac - bc) + c);
+    private static final int m1258differenceModuloWZ9TVnA(int a, int b, int c) {
+        int ac = UnsignedKt.m394uintRemainderJ1ME1BU(a, c);
+        int bc = UnsignedKt.m394uintRemainderJ1ME1BU(b, c);
+        return UInt.m140constructorimpl(UnsignedKt.uintCompare(ac, bc) >= 0 ? ac - bc : UInt.m140constructorimpl(ac - bc) + c);
     }
 
     /* renamed from: differenceModulo-sambcqE  reason: not valid java name */
-    private static final long m1257differenceModulosambcqE(long a, long b, long c) {
-        long ac = UnsignedKt.m394ulongRemaindereb3DHEI(a, c);
-        long bc = UnsignedKt.m394ulongRemaindereb3DHEI(b, c);
-        return ULong.m216constructorimpl(UnsignedKt.ulongCompare(ac, bc) >= 0 ? ac - bc : ULong.m216constructorimpl(ac - bc) + c);
+    private static final long m1259differenceModulosambcqE(long a, long b, long c) {
+        long ac = UnsignedKt.m396ulongRemaindereb3DHEI(a, c);
+        long bc = UnsignedKt.m396ulongRemaindereb3DHEI(b, c);
+        return ULong.m218constructorimpl(UnsignedKt.ulongCompare(ac, bc) >= 0 ? ac - bc : ULong.m218constructorimpl(ac - bc) + c);
     }
 
     /* renamed from: getProgressionLastElement-Nkh28Cs  reason: not valid java name */
-    public static final int m1259getProgressionLastElementNkh28Cs(int start, int end, int step) {
+    public static final int m1261getProgressionLastElementNkh28Cs(int start, int end, int step) {
         if (step > 0) {
             if (UnsignedKt.uintCompare(start, end) < 0) {
-                return UInt.m138constructorimpl(end - m1256differenceModuloWZ9TVnA(end, start, UInt.m138constructorimpl(step)));
+                return UInt.m140constructorimpl(end - m1258differenceModuloWZ9TVnA(end, start, UInt.m140constructorimpl(step)));
             }
         } else if (step >= 0) {
             throw new IllegalArgumentException("Step is zero.");
         } else {
             if (UnsignedKt.uintCompare(start, end) > 0) {
-                return UInt.m138constructorimpl(m1256differenceModuloWZ9TVnA(start, end, UInt.m138constructorimpl(-step)) + end);
+                return UInt.m140constructorimpl(m1258differenceModuloWZ9TVnA(start, end, UInt.m140constructorimpl(-step)) + end);
             }
         }
         return end;
     }
 
     /* renamed from: getProgressionLastElement-7ftBX0g  reason: not valid java name */
-    public static final long m1258getProgressionLastElement7ftBX0g(long start, long end, long step) {
+    public static final long m1260getProgressionLastElement7ftBX0g(long start, long end, long step) {
         if (step > 0) {
             if (UnsignedKt.ulongCompare(start, end) < 0) {
-                return ULong.m216constructorimpl(end - m1257differenceModulosambcqE(end, start, ULong.m216constructorimpl(step)));
+                return ULong.m218constructorimpl(end - m1259differenceModulosambcqE(end, start, ULong.m218constructorimpl(step)));
             }
         } else if (step >= 0) {
             throw new IllegalArgumentException("Step is zero.");
         } else {
             if (UnsignedKt.ulongCompare(start, end) > 0) {
-                return ULong.m216constructorimpl(m1257differenceModulosambcqE(start, end, ULong.m216constructorimpl(-step)) + end);
+                return ULong.m218constructorimpl(m1259differenceModulosambcqE(start, end, ULong.m218constructorimpl(-step)) + end);
             }
         }
         return end;

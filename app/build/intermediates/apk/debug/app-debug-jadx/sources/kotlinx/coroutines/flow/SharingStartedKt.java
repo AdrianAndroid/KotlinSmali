@@ -8,18 +8,18 @@ import kotlinx.coroutines.flow.SharingStarted;
 /* loaded from: classes.dex */
 public final class SharingStartedKt {
     /* renamed from: WhileSubscribed-5qebJ5I$default  reason: not valid java name */
-    public static /* synthetic */ SharingStarted m1568WhileSubscribed5qebJ5I$default(SharingStarted.Companion companion, long j, long j2, int i, Object obj) {
+    public static /* synthetic */ SharingStarted m1570WhileSubscribed5qebJ5I$default(SharingStarted.Companion companion, long j, long j2, int i, Object obj) {
         if ((i & 1) != 0) {
-            j = Duration.Companion.m1461getZEROUwyO8pc();
+            j = Duration.Companion.m1463getZEROUwyO8pc();
         }
         if ((i & 2) != 0) {
-            j2 = Duration.Companion.m1459getINFINITEUwyO8pc();
+            j2 = Duration.Companion.m1461getINFINITEUwyO8pc();
         }
-        return m1567WhileSubscribed5qebJ5I(companion, j, j2);
+        return m1569WhileSubscribed5qebJ5I(companion, j, j2);
     }
 
     /* renamed from: WhileSubscribed-5qebJ5I  reason: not valid java name */
-    public static final SharingStarted m1567WhileSubscribed5qebJ5I(SharingStarted.Companion $this$WhileSubscribed, long stopTimeout, long replayExpiration) {
-        return new StartedWhileSubscribed(Duration.m1377getInWholeMillisecondsimpl(stopTimeout), Duration.m1377getInWholeMillisecondsimpl(replayExpiration));
+    public static final SharingStarted m1569WhileSubscribed5qebJ5I(SharingStarted.Companion $this$WhileSubscribed, long stopTimeout, long replayExpiration) {
+        return new StartedWhileSubscribed(Duration.m1379getInWholeMillisecondsimpl(stopTimeout), Duration.m1379getInWholeMillisecondsimpl(replayExpiration));
     }
 }

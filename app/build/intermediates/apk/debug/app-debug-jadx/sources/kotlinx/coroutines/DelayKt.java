@@ -100,7 +100,7 @@ public final class DelayKt {
         cancellable$iv.initCancellability();
         CancellableContinuationImpl cont = cancellable$iv;
         if (timeMillis < Long.MAX_VALUE) {
-            getDelay(cont.getContext()).mo1582scheduleResumeAfterDelay(timeMillis, cont);
+            getDelay(cont.getContext()).mo1584scheduleResumeAfterDelay(timeMillis, cont);
         }
         Object result = cancellable$iv.getResult();
         if (result == IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
@@ -110,8 +110,8 @@ public final class DelayKt {
     }
 
     /* renamed from: delay-VtjQ1oo  reason: not valid java name */
-    public static final Object m1517delayVtjQ1oo(long duration, Continuation<? super Unit> continuation) {
-        Object delay = delay(m1518toDelayMillisLRDsOJo(duration), continuation);
+    public static final Object m1519delayVtjQ1oo(long duration, Continuation<? super Unit> continuation) {
+        Object delay = delay(m1520toDelayMillisLRDsOJo(duration), continuation);
         return delay == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? delay : Unit.INSTANCE;
     }
 
@@ -122,9 +122,9 @@ public final class DelayKt {
     }
 
     /* renamed from: toDelayMillis-LRDsOJo  reason: not valid java name */
-    public static final long m1518toDelayMillisLRDsOJo(long $this$toDelayMillis) {
-        if (Duration.m1358compareToLRDsOJo($this$toDelayMillis, Duration.Companion.m1461getZEROUwyO8pc()) > 0) {
-            return RangesKt.coerceAtLeast(Duration.m1377getInWholeMillisecondsimpl($this$toDelayMillis), 1L);
+    public static final long m1520toDelayMillisLRDsOJo(long $this$toDelayMillis) {
+        if (Duration.m1360compareToLRDsOJo($this$toDelayMillis, Duration.Companion.m1463getZEROUwyO8pc()) > 0) {
+            return RangesKt.coerceAtLeast(Duration.m1379getInWholeMillisecondsimpl($this$toDelayMillis), 1L);
         }
         return 0L;
     }

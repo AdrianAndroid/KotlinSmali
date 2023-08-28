@@ -8,7 +8,7 @@ import kotlin.Result;
 public final class CompletableDeferredKt {
     /* JADX WARN: Multi-variable type inference failed */
     public static final <T> boolean completeWith(CompletableDeferred<T> completableDeferred, Object result) {
-        Throwable it = Result.m47exceptionOrNullimpl(result);
+        Throwable it = Result.m49exceptionOrNullimpl(result);
         return it == null ? completableDeferred.complete(result) : completableDeferred.completeExceptionally(it);
     }
 

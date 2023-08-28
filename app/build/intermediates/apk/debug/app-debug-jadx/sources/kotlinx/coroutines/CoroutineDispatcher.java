@@ -20,7 +20,7 @@ public abstract class CoroutineDispatcher extends AbstractCoroutineContextElemen
     public static final Key Key = new Key(null);
 
     /* renamed from: dispatch */
-    public abstract void mo1581dispatch(CoroutineContext coroutineContext, Runnable runnable);
+    public abstract void mo1583dispatch(CoroutineContext coroutineContext, Runnable runnable);
 
     @Override // kotlin.coroutines.AbstractCoroutineContextElement, kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext
     public <E extends CoroutineContext.Element> E get(CoroutineContext.Key<E> key) {
@@ -67,7 +67,7 @@ public abstract class CoroutineDispatcher extends AbstractCoroutineContextElemen
     }
 
     public void dispatchYield(CoroutineContext context, Runnable block) {
-        mo1581dispatch(context, block);
+        mo1583dispatch(context, block);
     }
 
     @Override // kotlin.coroutines.ContinuationInterceptor

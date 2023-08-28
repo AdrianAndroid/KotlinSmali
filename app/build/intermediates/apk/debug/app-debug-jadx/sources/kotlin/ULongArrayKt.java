@@ -10,13 +10,13 @@ public final class ULongArrayKt {
         Intrinsics.checkNotNullParameter(init, "init");
         long[] jArr = new long[size];
         for (int i = 0; i < size; i++) {
-            jArr[i] = init.invoke(Integer.valueOf(i)).m267unboximpl();
+            jArr[i] = init.invoke(Integer.valueOf(i)).m269unboximpl();
         }
-        return ULongArray.m270constructorimpl(jArr);
+        return ULongArray.m272constructorimpl(jArr);
     }
 
     /* renamed from: ulongArrayOf-QwZRm1k  reason: not valid java name */
-    private static final long[] m286ulongArrayOfQwZRm1k(long... elements) {
+    private static final long[] m288ulongArrayOfQwZRm1k(long... elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
         return elements;
     }

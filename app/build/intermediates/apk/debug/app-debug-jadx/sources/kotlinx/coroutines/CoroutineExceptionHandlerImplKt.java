@@ -27,10 +27,10 @@ public final class CoroutineExceptionHandlerImplKt {
         try {
             Result.Companion companion = Result.Companion;
             kotlin.ExceptionsKt.addSuppressed(exception, new DiagnosticCoroutineContextException(context));
-            Result.m44constructorimpl(Unit.INSTANCE);
+            Result.m46constructorimpl(Unit.INSTANCE);
         } catch (Throwable th) {
             Result.Companion companion2 = Result.Companion;
-            Result.m44constructorimpl(ResultKt.createFailure(th));
+            Result.m46constructorimpl(ResultKt.createFailure(th));
         }
         currentThread2.getUncaughtExceptionHandler().uncaughtException(currentThread2, exception);
     }

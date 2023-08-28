@@ -40,9 +40,9 @@ final class LazyActorCoroutine<E> extends ActorCoroutine<E> implements SelectCla
 
     @Override // kotlinx.coroutines.channels.ChannelCoroutine, kotlinx.coroutines.channels.SendChannel
     /* renamed from: trySend-JP2dKIU */
-    public Object mo1535trySendJP2dKIU(E e) {
+    public Object mo1537trySendJP2dKIU(E e) {
         start();
-        return super.mo1535trySendJP2dKIU(e);
+        return super.mo1537trySendJP2dKIU(e);
     }
 
     @Override // kotlinx.coroutines.channels.ChannelCoroutine, kotlinx.coroutines.channels.SendChannel

@@ -167,7 +167,7 @@ public class SharedFlowImpl<T> extends AbstractSharedFlow<SharedFlowSlot> implem
             i++;
             if (cont != null) {
                 Result.Companion companion = Result.Companion;
-                cont.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+                cont.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
             }
         }
         return emitted;
@@ -303,7 +303,7 @@ public class SharedFlowImpl<T> extends AbstractSharedFlow<SharedFlowSlot> implem
         synchronized (this) {
             if (tryEmitLocked(t)) {
                 Result.Companion companion = Result.Companion;
-                cont.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+                cont.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
                 continuationArr = findSlotsToResumeLocked(continuationArr2);
                 emitter = null;
             } else {
@@ -328,7 +328,7 @@ public class SharedFlowImpl<T> extends AbstractSharedFlow<SharedFlowSlot> implem
             i++;
             if (r != null) {
                 Result.Companion companion2 = Result.Companion;
-                r.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+                r.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
             }
         }
         Object result = cancellable$iv.getResult();
@@ -449,7 +449,7 @@ public class SharedFlowImpl<T> extends AbstractSharedFlow<SharedFlowSlot> implem
             i++;
             if (resume != null) {
                 Result.Companion companion = Result.Companion;
-                resume.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+                resume.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
             }
         }
         return value;
@@ -486,7 +486,7 @@ public class SharedFlowImpl<T> extends AbstractSharedFlow<SharedFlowSlot> implem
                 slot.cont = cont;
             } else {
                 Result.Companion companion = Result.Companion;
-                cont.resumeWith(Result.m44constructorimpl(Unit.INSTANCE));
+                cont.resumeWith(Result.m46constructorimpl(Unit.INSTANCE));
             }
             Unit unit = Unit.INSTANCE;
         }

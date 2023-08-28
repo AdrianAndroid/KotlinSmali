@@ -1,8 +1,9 @@
 package androidx.transition;
 
 import android.view.View;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes.dex */
-class ViewUtilsApi19 extends ViewUtilsBase {
+public class ViewUtilsApi19 extends ViewUtilsBase {
     private static boolean sTryHiddenTransitionAlpha = true;
 
     @Override // androidx.transition.ViewUtilsBase
