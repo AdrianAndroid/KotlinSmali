@@ -5,8 +5,9 @@ import android.location.GpsStatus;
 import android.os.Build;
 import androidx.core.util.Preconditions;
 import java.util.Iterator;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes.dex */
-class GpsStatusWrapper extends GnssStatusCompat {
+public class GpsStatusWrapper extends GnssStatusCompat {
     private static final int BEIDOU_PRN_COUNT = 35;
     private static final int BEIDOU_PRN_OFFSET = 200;
     private static final int GLONASS_PRN_COUNT = 24;
