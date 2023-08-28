@@ -251,7 +251,7 @@ public class FilesKt__FileReadWriteKt extends FilesKt__FilePathComponentsKt {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v4, types: [byte[], java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r0v4, types: [java.lang.Object, byte[]] */
     public static final void forEachBlock(File $this$forEachBlock, int blockSize, Function2<? super byte[], ? super Integer, Unit> action) {
         Intrinsics.checkNotNullParameter($this$forEachBlock, "<this>");
         Intrinsics.checkNotNullParameter(action, "action");
